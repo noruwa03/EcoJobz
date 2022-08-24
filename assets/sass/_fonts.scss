@@ -1,0 +1,55 @@
+@font-face {
+  
+
+  src: url("@/assets/fonts/GT-America-Regular.ttf") format("truetype");
+  font-family: "GT-America";
+
+}
+
+@font-face {
+  
+
+  src: url("@/assets/fonts/GeneralSans-Regular.otf") format("truetype");
+  font-family: "GeneralSans";
+
+}
+
+
+@font-face {
+  
+
+  src: url("@/assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-family: "Poppins";
+
+}
+
+@font-face {
+  
+
+  src: url("@/assets/fonts/DMSans-Regular.ttf") format("truetype");
+  font-family: "DmSans";
+
+}
+
+@font-face {
+  
+
+  src: url("@/assets/fonts/WorkSans-Regular.ttf") format("truetype");
+  font-family: "WorkSans";
+
+}
+
+@font-face {
+  
+
+  src: url("/assets/fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+  font-family: "SpaceGrostesk";
+
+}
+
+$GT-America: "GT-America";
+$workSans: "WorkSans";
+$spaceGrostesk: "SpaceGrostesk";
+$dmSans: "DmSans";
+$generalSans: "GeneralSans";
+$poppins : "Poppins";

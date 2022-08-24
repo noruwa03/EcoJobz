@@ -1,0 +1,457 @@
+/* Description: Master CSS file */
+
+/*****************************************
+Table Of Contents:
+- Css Reset
+- Colors
+- Mixins
+- Font
+- General Styles
+- Services
+- About Us
+- Latest News
+- Our Approach
+- Contact Us
+- Contact Page
+- Footer
+- Media Queries
+******************************************/
+
+/*****************************************
+
+******************************************/
+
+/**********************/
+/*     Font    */
+/**********************/
+
+@import "fonts";
+
+/**************************/
+/*        Css Reset       */
+/**************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+
+  font-family: $GT-America;
+  list-style: none;
+
+  // a {
+  //   color: #000;
+  //   // text-decoration: none;
+
+  //   &:hover {
+  //     text-decoration: none;
+  //     color: #000;
+  //   }
+  // }
+}
+
+/**********************/
+/*       Colors       */
+/**********************/
+@import "colors";
+
+/**********************/
+/*       Mixins       */
+/**********************/
+@import "mixins";
+
+/**********************/
+/*   General Styles   */
+/**********************/
+
+nav {
+  padding: 2rem 0 1rem 0;
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 0px 26px;
+  .nav-item-container {
+    width: 87%;
+    margin: 0 auto;
+
+    @include flexItem(row, space-between);
+
+    .nav-item-list {
+      transform: translateY(0.7rem);
+
+      @include flexItem(row, space-between);
+
+      .nav-item {
+        .nav-link {
+          font-size: 1em;
+          color: $heading-color;
+          cursor: pointer;
+
+          margin-left:  3rem;
+        }
+      }
+      .nav-item:nth-of-type(4) {
+        transform: translateY(-0.7rem);
+        .nav-link {
+          font-size: 1em;
+          color: $heading-color;
+          cursor: pointer;
+
+          background-color: #e4ecf7;
+          padding: 0.5rem 1.4rem;
+          border-radius: 0.3rem;
+
+          @include flexItem(row, space-between);
+          align-items: center;
+
+          span {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+header {
+  padding: 7rem 0;
+  margin: 0 auto;
+  width: 85%;
+
+  h1 {
+    font-size: 5em;
+  }
+}
+
+.featured-jobs {
+  padding: 7rem 0;
+
+  h1 {
+    font-size: 3.2em;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+  }
+
+  .jobs-card {
+    padding: 2rem;
+    background-color: $white;
+    box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 40px;
+    border-radius: 0.6rem;
+    margin: 0.8rem 0;
+
+    .list-item {
+      @include flexItem(row, flex-start);
+
+      .item {
+        @include flexItem(row, flex-start);
+        align-items: center;
+        margin-right: 0.6rem;
+        margin-bottom: 0.6rem;
+        padding: 0.55rem 0.8rem;
+        background-color: #e4edfc;
+        border-radius: 2rem;
+
+        font-size: 0.85em;
+
+        .icon {
+          background-image: url("@/assets/icons/cancel-green.svg");
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 1rem;
+          height: 1rem;
+          margin-left: 0.5rem;
+        }
+      }
+
+      .item:nth-child(even) {
+        background: rgba(255, 173, 186, 0.5);
+
+        .icon {
+          background-image: url("@/assets/icons/cancel-red.svg");
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 1rem;
+          height: 1rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+
+    p {
+      margin: 2rem 0;
+      width: 100%;
+
+      font-size: 0.94em;
+
+      /**Major Properties**/
+      overflow: hidden;
+      line-height: 1.38rem;
+      max-height: 8em;
+      // background-color: red;
+      -webkit-box-orient: vertical;
+      display: block;
+      display: -webkit-box;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 4;
+    }
+
+    .location {
+      @include flexItem(row, flex-start);
+      align-items: center;
+
+      img {
+        width: 1.2rem;
+      }
+
+      .option {
+        margin-left: 0.4rem;
+        font-size: 0.85em;
+      }
+
+      .option:last-child {
+        span {
+          display: none;
+        }
+      }
+    }
+
+    .divider {
+      margin: 1.5rem 0 2rem 0;
+      height: 0.12rem;
+      width: 100%;
+      background-color: #efefef;
+    }
+
+    .date-bid {
+      @include flexItem(row, space-between);
+      align-items: center;
+
+      .date {
+        font-size: 0.85em;
+      }
+
+      .bid {
+        padding: 0.6rem 1.2rem;
+        background-color: #4c6fff;
+        color: $white;
+        border-radius: 0.4rem;
+        font-size: 0.85em;
+
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.how-we-work {
+  padding: 7rem 0;
+  h1 {
+    font-size: 3.2em;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+  }
+
+  img {
+    border-radius: 1rem;
+  }
+
+  .work-flow {
+    margin: 1.4rem 0;
+    .instruction {
+      h4,
+      h5 {
+        font-weight: bold;
+      }
+      p {
+        line-height: 1.33rem;
+        font-size: 0.86em;
+        font-family: $workSans;
+      }
+    }
+  }
+}
+
+.get-reviewed {
+  padding: 5rem 0;
+  background-color: #f3f5f6;
+
+  h1 {
+    font-size: 3.2em;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+  }
+
+  .review-blur {
+    // background-color: red;
+    position: relative;
+    height: 40rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    .blur {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(
+        180deg,
+        rgba(243, 245, 246, 0) 0%,
+        #f3f5f6 100%
+      );
+    }
+  }
+
+  .review-card {
+    padding: 1.1rem;
+    margin: 0.78rem 0;
+    background-color: $white;
+    border-radius: 0.8rem;
+
+    .img-name {
+      @include flexItem(row, flex-start);
+      align-items: center;
+
+      img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+      }
+
+      div {
+        .name {
+          color: #6f1df4;
+          font-size: 0.9em;
+        }
+
+        .username {
+          color: rgba(60, 60, 67, 0.5);
+          font-size: 0.9em;
+        }
+      }
+    }
+
+    p {
+      font-size: 0.92em;
+      margin-top: 0.7rem;
+    }
+
+    .link-date {
+      @include flexItem(row, space-between);
+      align-items: center;
+      .link {
+        font-size: 0.85em;
+        color: rgba(60, 60, 67, 0.5);
+      }
+
+      .date {
+        font-size: 0.85em;
+        color: rgba(60, 60, 67, 0.5);
+      }
+    }
+  }
+
+  .large-button {
+    margin-top: 2rem;
+
+    button {
+      padding: 0.7rem 1.3rem;
+
+      border: 1px solid #4c6fff;
+      border-radius: 8px;
+      color: #4c6fff;
+    }
+  }
+}
+
+.subscribe {
+  padding: 4rem;
+
+  .subscribe-border {
+    width: 85%;
+    margin: 0 auto;
+    border: 0.1rem solid rgba(187, 101, 255, 1);
+
+    border-radius: 1rem;
+    padding: 3.7rem;
+
+    h2 {
+      width: 50%;
+      margin: 0 auto 2rem auto;
+      text-transform: uppercase;
+      font-weight: bolder;
+    }
+
+    .form-box {
+      margin: 0 auto;
+      width: 50%;
+
+      input {
+        background: #edf2f7;
+
+        padding: 0.6rem 1rem;
+        width: 100%;
+        border: none;
+        border-radius: 0.3rem;
+
+        &::placeholder {
+          color: #7a828a;
+          font-size: 0.88em;
+        }
+      }
+
+      button {
+        margin-top: 1.5rem;
+        padding: 0.7rem 1.4rem;
+        background-color: #4c6fff;
+        color: $white;
+        border-radius: 0.4rem;
+        font-size: 0.85em;
+
+        border: none;
+      }
+    }
+  }
+}
+
+.footer-bg {
+  padding: 4rem 0;
+  background-color: $black;
+}
+
+footer {
+  .description {
+    margin-top: 1rem;
+    color: #e5e5e5;
+  }
+
+  h4 {
+    font-size: 1.2em;
+
+    color: $white;
+  }
+  .footer-link {
+    display: block;
+    margin: 0.7rem 0;
+    font-size: 0.98em;
+
+    color: #e5e5e5;
+
+    text-decoration: none;
+  }
+
+  .social-media {
+    margin-top: 2rem;
+
+    img {
+      width: 2rem;
+    }
+  }
+}
+
+@import "xlg";
+@import "lg";
+@import "sm";
+@import "mobile";
