@@ -85,7 +85,7 @@ nav {
           color: $heading-color;
           cursor: pointer;
 
-          margin-left:  3rem;
+          margin-left: 3rem;
         }
       }
       .nav-item:nth-of-type(4) {
@@ -107,6 +107,10 @@ nav {
           }
         }
       }
+    }
+
+    .menu-btn {
+      display: none;
     }
   }
 }
@@ -131,7 +135,7 @@ header {
   }
 
   .jobs-card {
-    padding: 2rem;
+    padding: 1.8rem;
     background-color: $white;
     box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 40px;
     border-radius: 0.6rem;
@@ -266,7 +270,6 @@ header {
       p {
         line-height: 1.33rem;
         font-size: 0.86em;
-        font-family: $workSans;
       }
     }
   }
@@ -285,7 +288,7 @@ header {
   .review-blur {
     // background-color: red;
     position: relative;
-    height: 40rem;
+    height: 42rem;
     overflow-y: hidden;
     overflow-x: hidden;
 
@@ -323,18 +326,18 @@ header {
       div {
         .name {
           color: #6f1df4;
-          font-size: 0.9em;
+          font-size: 0.83em;
         }
 
         .username {
           color: rgba(60, 60, 67, 0.5);
-          font-size: 0.9em;
+          font-size: 0.83em;
         }
       }
     }
 
     p {
-      font-size: 0.92em;
+      font-size: 0.86em;
       margin-top: 0.7rem;
     }
 
@@ -342,12 +345,12 @@ header {
       @include flexItem(row, space-between);
       align-items: center;
       .link {
-        font-size: 0.85em;
+        font-size: 0.83em;
         color: rgba(60, 60, 67, 0.5);
       }
 
       .date {
-        font-size: 0.85em;
+        font-size: 0.83em;
         color: rgba(60, 60, 67, 0.5);
       }
     }
@@ -357,17 +360,18 @@ header {
     margin-top: 2rem;
 
     button {
-      padding: 0.7rem 1.3rem;
+      padding: 0.6rem 1.2rem;
 
       border: 1px solid #4c6fff;
       border-radius: 8px;
       color: #4c6fff;
+      font-size: 0.85em;
     }
   }
 }
 
 .subscribe {
-  padding: 4rem;
+  padding: 4rem 0;
 
   .subscribe-border {
     width: 85%;
@@ -419,34 +423,35 @@ header {
 .footer-bg {
   padding: 4rem 0;
   background-color: $black;
-}
 
-footer {
-  .description {
-    margin-top: 1rem;
-    color: #e5e5e5;
-  }
+  footer {
+    .description {
+      margin-top: 1rem;
+      color: #e5e5e5;
+      font-size: 0.9em;
+    }
 
-  h4 {
-    font-size: 1.2em;
+    h4 {
+      font-size: 1.07em;
 
-    color: $white;
-  }
-  .footer-link {
-    display: block;
-    margin: 0.7rem 0;
-    font-size: 0.98em;
+      color: $white;
+    }
+    .footer-link {
+      display: block;
+      margin: 0.7rem 0;
+      font-size: 0.9em;
 
-    color: #e5e5e5;
+      color: #e5e5e5;
 
-    text-decoration: none;
-  }
+      text-decoration: none;
+    }
 
-  .social-media {
-    margin-top: 2rem;
+    .social-media {
+      margin-top: 2rem;
 
-    img {
-      width: 2rem;
+      img {
+        width: 1.5rem;
+      }
     }
   }
 }

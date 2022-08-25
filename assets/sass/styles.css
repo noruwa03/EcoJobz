@@ -162,6 +162,10 @@ nav .nav-item-container .nav-item-list .nav-item:nth-of-type(4) .nav-link span {
   margin-right: 0.5rem;
 }
 
+nav .nav-item-container .menu-btn {
+  display: none;
+}
+
 header {
   padding: 7rem 0;
   margin: 0 auto;
@@ -183,7 +187,7 @@ header h1 {
 }
 
 .featured-jobs .jobs-card {
-  padding: 2rem;
+  padding: 1.8rem;
   background-color: #fff;
   -webkit-box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 40px;
           box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 40px;
@@ -377,7 +381,6 @@ header h1 {
 .how-we-work .work-flow .instruction p {
   line-height: 1.33rem;
   font-size: 0.86em;
-  font-family: "WorkSans";
 }
 
 .get-reviewed {
@@ -393,7 +396,7 @@ header h1 {
 
 .get-reviewed .review-blur {
   position: relative;
-  height: 40rem;
+  height: 42rem;
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -445,16 +448,16 @@ header h1 {
 
 .get-reviewed .review-card .img-name div .name {
   color: #6f1df4;
-  font-size: 0.9em;
+  font-size: 0.83em;
 }
 
 .get-reviewed .review-card .img-name div .username {
   color: rgba(60, 60, 67, 0.5);
-  font-size: 0.9em;
+  font-size: 0.83em;
 }
 
 .get-reviewed .review-card p {
-  font-size: 0.92em;
+  font-size: 0.86em;
   margin-top: 0.7rem;
 }
 
@@ -480,12 +483,12 @@ header h1 {
 }
 
 .get-reviewed .review-card .link-date .link {
-  font-size: 0.85em;
+  font-size: 0.83em;
   color: rgba(60, 60, 67, 0.5);
 }
 
 .get-reviewed .review-card .link-date .date {
-  font-size: 0.85em;
+  font-size: 0.83em;
   color: rgba(60, 60, 67, 0.5);
 }
 
@@ -494,14 +497,15 @@ header h1 {
 }
 
 .get-reviewed .large-button button {
-  padding: 0.7rem 1.3rem;
+  padding: 0.6rem 1.2rem;
   border: 1px solid #4c6fff;
   border-radius: 8px;
   color: #4c6fff;
+  font-size: 0.85em;
 }
 
 .subscribe {
-  padding: 4rem;
+  padding: 4rem 0;
 }
 
 .subscribe .subscribe-border {
@@ -567,29 +571,743 @@ header h1 {
   background-color: #0B0706;
 }
 
-footer .description {
+.footer-bg footer .description {
   margin-top: 1rem;
   color: #e5e5e5;
+  font-size: 0.9em;
 }
 
-footer h4 {
-  font-size: 1.2em;
+.footer-bg footer h4 {
+  font-size: 1.07em;
   color: #fff;
 }
 
-footer .footer-link {
+.footer-bg footer .footer-link {
   display: block;
   margin: 0.7rem 0;
-  font-size: 0.98em;
+  font-size: 0.9em;
   color: #e5e5e5;
   text-decoration: none;
 }
 
-footer .social-media {
+.footer-bg footer .social-media {
   margin-top: 2rem;
 }
 
-footer .social-media img {
-  width: 2rem;
+.footer-bg footer .social-media img {
+  width: 1.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  nav {
+    padding: 2rem 0 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+  }
+  nav .nav-item-container .logo-image {
+    -webkit-transform: translateY(-0.6rem);
+            transform: translateY(-0.6rem);
+  }
+  nav .nav-item-container .logo-image img {
+    width: 8rem;
+  }
+  nav .nav-item-container .nav-item-list {
+    display: none;
+  }
+  .menu-btn {
+    z-index: 150;
+    position: fixed;
+    right: 1rem;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__burger {
+    width: 27px;
+    height: 3px;
+    background: #0B0706;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: #0B0706;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  .menu-btn__burger::after {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  /* ANIMATION */
+  .menu-btn.active .menu-btn__burger {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .menu-btn.active .menu-btn__burger::before {
+    -webkit-transform: rotate(45deg) translate(35px, -35px);
+            transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menu-btn.active .menu-btn__burger::after {
+    -webkit-transform: rotate(-45deg) translate(35px, 35px);
+            transform: rotate(-45deg) translate(35px, 35px);
+  }
+  nav.active {
+    display: block;
+    padding: 0;
+  }
+  nav.active .nav-item-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    -webkit-box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 40px;
+            box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 40px;
+    border-radius: 0.6rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    align-items: flex-start;
+    overflow-y: scroll;
+  }
+  nav.active .nav-item-container .logo-image {
+    display: none;
+  }
+  nav.active .nav-item-container .nav-item-list {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  nav.active .nav-item-container .nav-item-list .nav-item .nav-link {
+    font-size: 1em;
+    cursor: pointer;
+    margin: 1.4rem 0;
+  }
+  header {
+    padding: 8rem 0 4rem 0;
+    margin: 0 auto;
+    width: 80%;
+  }
+  header h1 {
+    font-size: 2.2em;
+  }
+  header h1 img {
+    width: 4rem;
+  }
+  .featured-jobs {
+    padding: 5rem 0;
+  }
+  .featured-jobs h1 {
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+  }
+  .featured-jobs .jobs-card {
+    padding: 1.5rem;
+    margin: 0.8rem 0;
+  }
+  .featured-jobs .jobs-card .list-item .item {
+    font-size: 0.85em;
+  }
+  .featured-jobs .jobs-card p {
+    margin: 1.4rem 0;
+    font-size: 0.85em;
+    /**Major Properties**/
+    overflow: hidden;
+    line-height: 1.38rem;
+    max-height: 8em;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+  }
+  .featured-jobs .jobs-card .location img {
+    width: 0.9rem;
+  }
+  .featured-jobs .jobs-card .location .option {
+    margin-left: 0.4rem;
+    font-size: 0.85em;
+  }
+  .featured-jobs .jobs-card .location .option:last-child span {
+    display: none;
+  }
+  .featured-jobs .jobs-card .date-bid .date {
+    font-size: 0.83em;
+  }
+  .featured-jobs .jobs-card .date-bid .bid {
+    padding: 0.5rem 1rem;
+    font-size: 0.83em;
+  }
+  .how-we-work {
+    padding: 5rem 0;
+  }
+  .how-we-work h1 {
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+  }
+  .how-we-work img {
+    border-radius: 1rem;
+  }
+  .how-we-work .work-flow {
+    margin: 1rem 0;
+  }
+  .how-we-work .work-flow .instruction h4,
+  .how-we-work .work-flow .instruction h5 {
+    font-weight: bold;
+  }
+  .how-we-work .work-flow .instruction p {
+    line-height: 1.33rem;
+    font-size: 0.83em;
+  }
+  .get-reviewed {
+    padding: 5rem 0;
+  }
+  .get-reviewed h1 {
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+  }
+  .get-reviewed .review-blur {
+    position: relative;
+    height: 46rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .get-reviewed .review-blur .blur {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 245, 246, 0)), to(#f3f5f6));
+    background: linear-gradient(180deg, rgba(243, 245, 246, 0) 0%, #f3f5f6 100%);
+  }
+  .get-reviewed .review-card {
+    padding: 1.1rem;
+  }
+  .get-reviewed .review-card .img-name div .name {
+    font-size: 0.85em;
+  }
+  .get-reviewed .review-card .img-name div .username {
+    font-size: 0.85em;
+  }
+  .get-reviewed .review-card p {
+    font-size: 0.85em;
+    margin-top: 0.7rem;
+  }
+  .get-reviewed .review-card .link-date .link {
+    font-size: 0.83em;
+  }
+  .get-reviewed .review-card .link-date .date {
+    font-size: 0.83em;
+  }
+  .get-reviewed .large-button {
+    margin-top: 1rem;
+  }
+  .get-reviewed .large-button button {
+    padding: 0.7rem 1.3rem;
+    font-size: 0.83em;
+  }
+  .subscribe {
+    padding: 5rem 0;
+  }
+  .subscribe .subscribe-border {
+    width: 87%;
+    margin: 0 auto;
+    padding: 2.7rem 1rem;
+  }
+  .subscribe .subscribe-border h2 {
+    width: 66%;
+    margin: 0 auto 2rem auto;
+    font-size: 1.6em;
+  }
+  .subscribe .subscribe-border .form-box {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .subscribe .subscribe-border .form-box input::-webkit-input-placeholder {
+    font-size: 0.85em;
+  }
+  .subscribe .subscribe-border .form-box input:-ms-input-placeholder {
+    font-size: 0.85em;
+  }
+  .subscribe .subscribe-border .form-box input::-ms-input-placeholder {
+    font-size: 0.85em;
+  }
+  .subscribe .subscribe-border .form-box input::placeholder {
+    font-size: 0.85em;
+  }
+  .subscribe .subscribe-border .form-box button {
+    margin-top: 1.3rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.83em;
+    border: none;
+  }
+  footer .description {
+    margin-top: 1rem;
+    margin-bottom: 1.4rem;
+    font-size: 0.85em;
+  }
+  footer h4 {
+    font-size: 1.1em;
+    margin-top: 2rem;
+  }
+  footer .footer-link {
+    display: block;
+    margin: 0.7rem 0;
+    font-size: 0.85em;
+  }
+  footer .social-media {
+    margin-top: 2rem;
+  }
+  footer .social-media img {
+    width: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 4rem 0;
+    margin: 0 auto;
+    width: 88%;
+  }
+  header h1 {
+    font-size: 2.2em;
+  }
+  header h1 img {
+    width: 3.5rem;
+  }
+  .featured-jobs {
+    padding: 3rem 0;
+  }
+  .featured-jobs h1 {
+    font-size: 1.6em;
+    margin-bottom: 1.5rem;
+  }
+  .featured-jobs .jobs-card {
+    padding: 1.5rem;
+    margin: 0.8rem 0;
+  }
+  .featured-jobs .jobs-card .list-item .item {
+    font-size: 0.85em;
+  }
+  .featured-jobs .jobs-card p {
+    margin: 1.4rem 0;
+    font-size: 0.85em;
+    /**Major Properties**/
+    overflow: hidden;
+    line-height: 1.38rem;
+    max-height: 8em;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+  }
+  .featured-jobs .jobs-card .location img {
+    width: 0.9rem;
+  }
+  .featured-jobs .jobs-card .location .option {
+    margin-left: 0.4rem;
+    font-size: 0.85em;
+  }
+  .featured-jobs .jobs-card .location .option:last-child span {
+    display: none;
+  }
+  .featured-jobs .jobs-card .date-bid .date {
+    font-size: 0.83em;
+  }
+  .featured-jobs .jobs-card .date-bid .bid {
+    padding: 0.5rem 1rem;
+    font-size: 0.83em;
+  }
+  .how-we-work {
+    padding: 3rem 0;
+  }
+  .how-we-work h1 {
+    font-size: 1.6em;
+    margin-bottom: 1.5rem;
+  }
+  .how-we-work img {
+    border-radius: 1rem;
+  }
+  .how-we-work .work-flow {
+    margin: 1rem 0;
+  }
+  .how-we-work .work-flow .instruction h4,
+  .how-we-work .work-flow .instruction h5 {
+    font-weight: bold;
+  }
+  .how-we-work .work-flow .instruction p {
+    line-height: 1.33rem;
+    font-size: 0.83em;
+  }
+  .get-reviewed {
+    padding: 3rem 0;
+  }
+  .get-reviewed h1 {
+    font-size: 1.6em;
+    margin-bottom: 1.5rem;
+  }
+  .get-reviewed .review-blur {
+    position: relative;
+    height: 46rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .get-reviewed .review-blur .blur {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 245, 246, 0)), to(#f3f5f6));
+    background: linear-gradient(180deg, rgba(243, 245, 246, 0) 0%, #f3f5f6 100%);
+  }
+  .get-reviewed .review-card {
+    padding: 1.1rem;
+  }
+  .get-reviewed .review-card .img-name div .name {
+    font-size: 0.85em;
+  }
+  .get-reviewed .review-card .img-name div .username {
+    font-size: 0.85em;
+  }
+  .get-reviewed .review-card p {
+    font-size: 0.85em;
+    margin-top: 0.7rem;
+  }
+  .get-reviewed .review-card .link-date .link {
+    font-size: 0.83em;
+  }
+  .get-reviewed .review-card .link-date .date {
+    font-size: 0.83em;
+  }
+  .get-reviewed .large-button {
+    margin-top: 1rem;
+  }
+  .get-reviewed .large-button button {
+    padding: 0.7rem 1.3rem;
+    font-size: 0.83em;
+  }
+  .subscribe {
+    padding: 3rem 0;
+  }
+  .subscribe .subscribe-border {
+    width: 87%;
+    margin: 0 auto;
+    padding: 2.7rem 1rem;
+  }
+  .subscribe .subscribe-border h2 {
+    width: 70%;
+    margin: 0 auto 2rem auto;
+    font-size: 1.2em;
+  }
+  .subscribe .subscribe-border .form-box {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .subscribe .subscribe-border .form-box input::-webkit-input-placeholder {
+    font-size: 0.85em;
+  }
+  .subscribe .subscribe-border .form-box input:-ms-input-placeholder {
+    font-size: 0.85em;
+  }
+  .subscribe .subscribe-border .form-box input::-ms-input-placeholder {
+    font-size: 0.85em;
+  }
+  .subscribe .subscribe-border .form-box input::placeholder {
+    font-size: 0.85em;
+  }
+  .subscribe .subscribe-border .form-box button {
+    margin-top: 1.3rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.83em;
+    border: none;
+  }
+  footer .description {
+    margin-top: 1rem;
+    margin-bottom: 1.4rem;
+    font-size: 0.85em;
+  }
+  footer h4 {
+    font-size: 1.1em;
+    margin-top: 2rem;
+  }
+  footer .footer-link {
+    display: block;
+    margin: 0.7rem 0;
+    font-size: 0.85em;
+  }
+  footer .social-media {
+    margin-top: 2rem;
+  }
+  footer .social-media img {
+    width: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    padding: 1.5rem 0 1rem 0;
+  }
+  nav .nav-item-container .logo-image {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+  nav .nav-item-container .logo-image img {
+    width: 7rem;
+  }
+  nav .nav-item-container .nav-item-list {
+    display: none;
+  }
+  header {
+    padding: 7rem 0 3rem 0;
+    margin: 0 auto;
+    width: 94%;
+  }
+  header h1 {
+    font-size: 1.6em;
+  }
+  header h1 img {
+    width: 2.7rem;
+  }
+  .featured-jobs {
+    padding: 3rem 0;
+  }
+  .featured-jobs h1 {
+    font-size: 1.6em;
+    margin-bottom: 1.5rem;
+  }
+  .featured-jobs .jobs-card {
+    padding: 1.5rem;
+    margin: 0.8rem 0;
+  }
+  .featured-jobs .jobs-card .list-item .item {
+    font-size: 0.8em;
+  }
+  .featured-jobs .jobs-card p {
+    margin: 1.4rem 0;
+    font-size: 0.85em;
+    /**Major Properties**/
+    overflow: hidden;
+    line-height: 1.38rem;
+    max-height: 8em;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+  }
+  .featured-jobs .jobs-card .location img {
+    width: 0.9rem;
+  }
+  .featured-jobs .jobs-card .location .option {
+    margin-left: 0.4rem;
+    font-size: 0.8em;
+  }
+  .featured-jobs .jobs-card .location .option:last-child span {
+    display: none;
+  }
+  .featured-jobs .jobs-card .date-bid .date {
+    font-size: 0.83em;
+  }
+  .featured-jobs .jobs-card .date-bid .bid {
+    padding: 0.5rem 1rem;
+    font-size: 0.83em;
+  }
+  .how-we-work {
+    padding: 3rem 0;
+  }
+  .how-we-work h1 {
+    font-size: 1.6em;
+    margin-bottom: 1.5rem;
+  }
+  .how-we-work img {
+    border-radius: 1rem;
+  }
+  .how-we-work .work-flow {
+    margin: 1rem 0;
+  }
+  .how-we-work .work-flow .instruction h4,
+  .how-we-work .work-flow .instruction h5 {
+    font-weight: bold;
+  }
+  .how-we-work .work-flow .instruction p {
+    line-height: 1.33rem;
+    font-size: 0.83em;
+  }
+  .get-reviewed {
+    padding: 3rem 0;
+  }
+  .get-reviewed h1 {
+    font-size: 1.6em;
+    margin-bottom: 1.5rem;
+  }
+  .get-reviewed .review-blur {
+    position: relative;
+    height: 46rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .get-reviewed .review-blur .blur {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 245, 246, 0)), to(#f3f5f6));
+    background: linear-gradient(180deg, rgba(243, 245, 246, 0) 0%, #f3f5f6 100%);
+  }
+  .get-reviewed .review-card {
+    padding: 1.1rem;
+  }
+  .get-reviewed .review-card .img-name div .name {
+    font-size: 0.85em;
+  }
+  .get-reviewed .review-card .img-name div .username {
+    font-size: 0.85em;
+  }
+  .get-reviewed .review-card p {
+    font-size: 0.85em;
+    margin-top: 0.7rem;
+  }
+  .get-reviewed .review-card .link-date .link {
+    font-size: 0.83em;
+  }
+  .get-reviewed .review-card .link-date .date {
+    font-size: 0.83em;
+  }
+  .get-reviewed .large-button {
+    margin-top: 1rem;
+  }
+  .get-reviewed .large-button button {
+    padding: 0.7rem 1.3rem;
+    font-size: 0.83em;
+  }
+  .subscribe {
+    padding: 3rem 0;
+  }
+  .subscribe .subscribe-border {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  .subscribe .subscribe-border h2 {
+    width: 96%;
+    margin: 0 auto 2rem auto;
+    font-size: 1.2em;
+  }
+  .subscribe .subscribe-border .form-box {
+    margin: 0 auto;
+    width: 94%;
+  }
+  .subscribe .subscribe-border .form-box input::-webkit-input-placeholder {
+    font-size: 0.85em;
+  }
+  .subscribe .subscribe-border .form-box input:-ms-input-placeholder {
+    font-size: 0.85em;
+  }
+  .subscribe .subscribe-border .form-box input::-ms-input-placeholder {
+    font-size: 0.85em;
+  }
+  .subscribe .subscribe-border .form-box input::placeholder {
+    font-size: 0.85em;
+  }
+  .subscribe .subscribe-border .form-box button {
+    margin-top: 1.3rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.83em;
+    border: none;
+  }
+  .footer-bg {
+    padding: 3rem 0;
+  }
+  .footer-bg footer .footer-logo img {
+    width: 8rem;
+  }
+  .footer-bg footer .description {
+    margin-top: 1rem;
+    margin-bottom: 1.4rem;
+    font-size: 0.85em;
+  }
+  .footer-bg footer h4 {
+    font-size: 1.1em;
+    margin-top: 2rem;
+  }
+  .footer-bg footer .footer-link {
+    display: block;
+    margin: 0.7rem 0;
+    font-size: 0.85em;
+  }
+  .footer-bg footer .social-media {
+    margin-top: 2rem;
+  }
+  .footer-bg footer .social-media img {
+    width: 1.5rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
