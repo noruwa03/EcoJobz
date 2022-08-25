@@ -2,7 +2,7 @@
   <div>
     <Head>
       <Title>Ecojobz</Title>
-      <Meta name="description" content="Ecolabz site" />
+      <Meta name="description" content="Ecojobz site" />
     </Head>
     <!-- Navigation -->
     <nav>
@@ -22,7 +22,7 @@
             <NuxtLink class="nav-link" to="/">About</NuxtLink>
           </li>
           <li @click="removeNavbar" class="nav-item">
-            <NuxtLink class="nav-link" to="/">Login</NuxtLink>
+            <NuxtLink class="nav-link" to="/login">Login</NuxtLink>
           </li>
           <li @click="removeNavbar" class="nav-item">
             <NuxtLink class="nav-link" to="/"
@@ -59,10 +59,7 @@
         <img src="@/assets/images/slider-placeholder-01.png" alt="..." />
         <img src="@/assets/images/slider-placeholder-02.png" alt="..." />
         <img src="@/assets/images/slider-placeholder-03.png" alt="..." />
-        <img src="@/assets/images/slider-placeholder-01.png" alt="..." />
-        <img src="@/assets/images/slider-placeholder-01.png" alt="..." />
-        <img src="@/assets/images/slider-placeholder-02.png" alt="..." />
-        <img src="@/assets/images/slider-placeholder-03.png" alt="..." />
+        <img src="@/assets/images/space-4.jpg" alt="..." />
         <img src="@/assets/images/slider-placeholder-01.png" alt="..." />
       </div>
       <span @click="scrollToPrevPage" class="btn prev"></span>
@@ -70,6 +67,100 @@
     </div>
 
     <!-- End of Carousel Section -->
+
+    <!-- How-We-Work -->
+    <div class="how-we-work">
+      <div class="text-center"><h1>How We Work</h1></div>
+      <div class="container-lg">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-sm-6 col-lg-6 work-flow">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-6">
+                <img
+                  src="@/assets/images/how-we-work-01.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-6">
+                <div class="instruction">
+                  <h4>01</h4>
+                  <h5>Create a free account</h5>
+                  <p>
+                    Get started by loggin into your account or creating a free
+                    account and following the easy steps.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-6 work-flow">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-6">
+                <img
+                  src="@/assets/images/how-we-work-02.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-6">
+                <div class="instruction">
+                  <h4>02</h4>
+                  <h5>Set up a profile</h5>
+                  <p>
+                    By using a video meeting platform, our team can connect with
+                    you as a client and discuss your needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-6 work-flow">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-6">
+                <img
+                  src="@/assets/images/how-we-work-03.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-6">
+                <div class="instruction">
+                  <h4>03</h4>
+                  <h5>Bid for a project</h5>
+                  <p>
+                    By using a video meeting platform, our team can connect with
+                    you as a client and discuss your needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-6 work-flow">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-6">
+                <img
+                  src="@/assets/images/how-we-work-04.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-6">
+                <div class="instruction">
+                  <h4>03</h4>
+                  <h5>Bid for a project</h5>
+                  <p>
+                    By using a video meeting platform, our team can connect with
+                    you as a client and discuss your needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of How-We-Work -->
 
     <!-- Featured Jobs -->
     <div class="featured-jobs">
@@ -324,99 +415,7 @@
     </div>
     <!-- End of Featured Jobs -->
 
-    <!-- How-We-Work -->
-    <div class="how-we-work">
-      <div class="text-center"><h1>How We Work</h1></div>
-      <div class="container-lg">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-12 col-sm-6 col-lg-6 work-flow">
-            <div class="row align-items-center justify-content-between">
-              <div class="col-6">
-                <img
-                  src="@/assets/images/how-we-work-01.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="col-6">
-                <div class="instruction">
-                  <h4>01</h4>
-                  <h5>Create a free account</h5>
-                  <p>
-                    Get started by loggin into your account or creating a free
-                    account and following the easy steps.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-6 work-flow">
-            <div class="row align-items-center justify-content-between">
-              <div class="col-6">
-                <img
-                  src="@/assets/images/how-we-work-02.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="col-6">
-                <div class="instruction">
-                  <h4>02</h4>
-                  <h5>Set up a profile</h5>
-                  <p>
-                    By using a video meeting platform, our team can connect with
-                    you as a client and discuss your needs.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-6 work-flow">
-            <div class="row align-items-center justify-content-between">
-              <div class="col-6">
-                <img
-                  src="@/assets/images/how-we-work-03.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="col-6">
-                <div class="instruction">
-                  <h4>03</h4>
-                  <h5>Bid for a project</h5>
-                  <p>
-                    By using a video meeting platform, our team can connect with
-                    you as a client and discuss your needs.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-6 work-flow">
-            <div class="row align-items-center justify-content-between">
-              <div class="col-6">
-                <img
-                  src="@/assets/images/how-we-work-04.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="col-6">
-                <div class="instruction">
-                  <h4>03</h4>
-                  <h5>Bid for a project</h5>
-                  <p>
-                    By using a video meeting platform, our team can connect with
-                    you as a client and discuss your needs.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End of How-We-Work -->
+    
 
     <!-- Get Reviewed -->
 

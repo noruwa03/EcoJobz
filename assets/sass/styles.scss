@@ -130,7 +130,6 @@ header {
   max-width: 85%;
   margin: 0 auto;
   padding: 0 10;
-
 }
 
 .gallery_scroller {
@@ -142,7 +141,6 @@ header {
 
   display: flex;
   align-items: center;
-
 
   /* Enable Safari touch scrolling physics which is needed for scroll snap */
   -webkit-overflow-scrolling: touch;
@@ -166,8 +164,6 @@ header {
   position: relative;
   border-radius: 10px;
 }
-
-
 
 .gallery .btn {
   position: absolute;
@@ -194,6 +190,33 @@ header {
 .gallery .btn.prev {
   background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M33.6 14.7H8.043L19.782 2.961 16.8 0 0 16.8l16.8 16.8 2.961-2.961L8.043 18.9H33.6z" fill="%23FFF" fill-rule="evenodd"/></svg>');
   left: 10px;
+}
+
+.how-we-work {
+  padding: 7rem 0;
+  h1 {
+    font-size: 3.2em;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+  }
+
+  img {
+    border-radius: 1rem;
+  }
+
+  .work-flow {
+    margin: 1.4rem 0;
+    .instruction {
+      h4,
+      h5 {
+        font-weight: bold;
+      }
+      p {
+        line-height: 1.33rem;
+        font-size: 0.86em;
+      }
+    }
+  }
 }
 
 .featured-jobs {
@@ -314,33 +337,6 @@ header {
         font-size: 0.85em;
 
         cursor: pointer;
-      }
-    }
-  }
-}
-
-.how-we-work {
-  padding: 7rem 0;
-  h1 {
-    font-size: 3.2em;
-    font-weight: bolder;
-    margin-bottom: 3rem;
-  }
-
-  img {
-    border-radius: 1rem;
-  }
-
-  .work-flow {
-    margin: 1.4rem 0;
-    .instruction {
-      h4,
-      h5 {
-        font-weight: bold;
-      }
-      p {
-        line-height: 1.33rem;
-        font-size: 0.86em;
       }
     }
   }
@@ -487,6 +483,143 @@ header {
 
         border: none;
       }
+    }
+  }
+}
+
+.login-page {
+  @include flexItem(row, space-between);
+  align-items: center;
+
+  .form {
+    width: 50%;
+
+    form {
+      width: 60%;
+      margin: 0 auto;
+
+      h1 {
+        margin-bottom: 2rem;
+        font-weight: bolder;
+      }
+
+      input {
+        background: #edf2f7;
+
+        padding: 0.6rem 1rem;
+        margin-top: 2rem;
+        width: 100%;
+        border: none;
+        border-radius: 0.3rem;
+
+        &::placeholder {
+          color: #7a828a;
+          font-size: 0.88em;
+        }
+      }
+
+      .forgot-password {
+        margin-top: 1rem;
+        @include flexItem(row, flex-end);
+
+        a {
+          color: #315581;
+          text-decoration: none;
+        }
+      }
+
+      button {
+        margin-top: 2.5rem;
+        width: 100%;
+        color: $white;
+        text-transform: uppercase;
+        background: #4272ac;
+        box-shadow: 0px 6px 2px -4px rgba(14, 14, 44, 0.1),
+          inset 0px -1px 0px rgba(14, 14, 44, 0.4);
+        border-radius: 8px;
+        padding: 0.6rem;
+        border: none;
+        font-size: 0.88em;
+        letter-spacing: 1px;
+        font-weight: bold;
+      }
+
+      div {
+        @include flexItem(row, space-between);
+        align-items: center;
+
+        .divider {
+          width: 35%;
+          height: 1px;
+          background-color: #f5f4f7;
+        }
+
+        .or {
+          margin: 2rem 0;
+          color: #979da4;
+        }
+      }
+
+      .multiple-sign-in {
+        @include flexItem(row, space-between);
+        align-items: center;
+
+        .google-sign-in {
+          @include flexItem(row, space-between);
+
+          align-items: center;
+
+          border: 1px solid #eaeaea;
+          border-radius: 8px;
+          padding: 0.8rem 1.2rem;
+          font-weight: bold;
+          cursor: pointer;
+
+          img {
+            margin-right: 0.5rem;
+          }
+        }
+
+        .apple-sign-in {
+          @include flexItem(row, space-between);
+
+          align-items: center;
+
+          border: 1px solid #eaeaea;
+          border-radius: 8px;
+          padding: 0.8rem 1.2rem;
+          background-color: $black;
+          color: $white;
+          cursor: pointer;
+
+          img {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+
+      .get-started {
+        margin-top: 2rem;
+        @include flexItem(row, flex-start);
+        align-items: center;
+        color: #979da4;
+
+        a {
+          margin-left: 1rem;
+          color: #4272ac;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .image {
+    width: 50%;
+    height: 100vh;
+
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 }

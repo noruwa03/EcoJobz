@@ -23,10 +23,37 @@
     width: 94%;
 
     h1 {
-      font-size: 1.6em;
+      font-size: 1.7em;
 
       img {
         width: 2.7rem;
+      }
+    }
+  }
+
+  .how-we-work {
+    padding: 3rem 0;
+    h1 {
+      font-size: 1.6em;
+
+      margin-bottom: 1.5rem;
+    }
+
+    img {
+      border-radius: 1rem;
+    }
+
+    .work-flow {
+      margin: 1rem 0;
+      .instruction {
+        h4,
+        h5 {
+          font-weight: bold;
+        }
+        p {
+          line-height: 1.33rem;
+          font-size: 0.83em;
+        }
       }
     }
   }
@@ -99,33 +126,6 @@
     }
   }
 
-  .how-we-work {
-    padding: 3rem 0;
-    h1 {
-      font-size: 1.6em;
-
-      margin-bottom: 1.5rem;
-    }
-
-    img {
-      border-radius: 1rem;
-    }
-
-    .work-flow {
-      margin: 1rem 0;
-      .instruction {
-        h4,
-        h5 {
-          font-weight: bold;
-        }
-        p {
-          line-height: 1.33rem;
-          font-size: 0.83em;
-        }
-      }
-    }
-  }
-
   .get-reviewed {
     padding: 3rem 0;
 
@@ -190,7 +190,7 @@
       margin-top: 1rem;
 
       button {
-        padding: 0.7rem 1.3rem;
+        padding: 0.5rem 1.2rem;
         font-size: 0.83em;
       }
     }
@@ -230,6 +230,77 @@
           border: none;
         }
       }
+    }
+  }
+
+  .login-page {
+    padding: 4rem 0;
+    .form {
+      width: 100%;
+
+      form {
+        width: 90%;
+        margin: 0 auto;
+
+        h1 {
+          margin-bottom: 2rem;
+        }
+
+        button {
+          font-size: 0.8em;
+        }
+
+        div {
+          .divider {
+            width: 35%;
+            height: 1px;
+            background-color: #f5f4f7;
+          }
+
+          .or {
+            margin: 2rem 0;
+            color: #979da4;
+            font-size: 0.89em;
+          }
+        }
+
+        .multiple-sign-in {
+          .google-sign-in {
+            padding: 0.8rem 0.7rem;
+            font-size: 0.8em;
+
+            img {
+              margin-right: 0.3rem;
+            }
+          }
+
+          .apple-sign-in {
+            padding: 0.8rem 0.7rem;
+            font-size: 0.8em;
+
+            img {
+              margin-right: 0.3rem;
+            }
+          }
+        }
+
+        .get-started {
+          margin-top: 2rem;
+          @include flexItem(row, flex-start);
+          align-items: center;
+          color: #979da4;
+
+          a {
+            margin-left: 1rem;
+            color: #4272ac;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .image {
+      display: none;
     }
   }
 

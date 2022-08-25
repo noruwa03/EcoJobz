@@ -13,6 +13,33 @@
     }
   }
 
+  .how-we-work {
+    padding: 3rem 0;
+    h1 {
+      font-size: 1.6em;
+
+      margin-bottom: 1.5rem;
+    }
+
+    img {
+      border-radius: 1rem;
+    }
+
+    .work-flow {
+      margin: 1rem 0;
+      .instruction {
+        h4,
+        h5 {
+          font-weight: bold;
+        }
+        p {
+          line-height: 1.33rem;
+          font-size: 0.83em;
+        }
+      }
+    }
+  }
+
   .featured-jobs {
     padding: 3rem 0;
 
@@ -75,33 +102,6 @@
         .bid {
           padding: 0.5rem 1rem;
 
-          font-size: 0.83em;
-        }
-      }
-    }
-  }
-
-  .how-we-work {
-    padding: 3rem 0;
-    h1 {
-      font-size: 1.6em;
-
-      margin-bottom: 1.5rem;
-    }
-
-    img {
-      border-radius: 1rem;
-    }
-
-    .work-flow {
-      margin: 1rem 0;
-      .instruction {
-        h4,
-        h5 {
-          font-weight: bold;
-        }
-        p {
-          line-height: 1.33rem;
           font-size: 0.83em;
         }
       }

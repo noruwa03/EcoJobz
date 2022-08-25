@@ -38,7 +38,7 @@
     transition: all 0.5s ease-in-out;
   }
   .menu-btn__burger {
-    width: 27px;
+    width: 40px;
     height: 3px;
     background: $black;
 
@@ -136,6 +136,33 @@
     }
   }
 
+  .how-we-work {
+    padding: 5rem 0;
+    h1 {
+      font-size: 2.2em;
+
+      margin-bottom: 1.5rem;
+    }
+
+    img {
+      border-radius: 1rem;
+    }
+
+    .work-flow {
+      margin: 1rem 0;
+      .instruction {
+        h4,
+        h5 {
+          font-weight: bold;
+        }
+        p {
+          line-height: 1.33rem;
+          font-size: 0.83em;
+        }
+      }
+    }
+  }
+
   .featured-jobs {
     padding: 5rem 0;
 
@@ -198,33 +225,6 @@
         .bid {
           padding: 0.5rem 1rem;
 
-          font-size: 0.83em;
-        }
-      }
-    }
-  }
-
-  .how-we-work {
-    padding: 5rem 0;
-    h1 {
-      font-size: 2.2em;
-
-      margin-bottom: 1.5rem;
-    }
-
-    img {
-      border-radius: 1rem;
-    }
-
-    .work-flow {
-      margin: 1rem 0;
-      .instruction {
-        h4,
-        h5 {
-          font-weight: bold;
-        }
-        p {
-          line-height: 1.33rem;
           font-size: 0.83em;
         }
       }
@@ -335,6 +335,72 @@
           border: none;
         }
       }
+    }
+  }
+
+  .login-page {
+    padding: 4rem 0;
+    .form {
+      width: 100%;
+
+      form {
+        width: 70%;
+        margin: 0 auto;
+
+        h1 {
+          margin-bottom: 2rem;
+        }
+
+        button {
+          font-size: 0.8em;
+        }
+
+        div {
+          .divider {
+            width: 35%;
+            height: 1px;
+            background-color: #f5f4f7;
+          }
+
+          .or {
+            margin: 2rem 0;
+            color: #979da4;
+            font-size: 0.89em;
+          }
+        }
+
+        .multiple-sign-in {
+           @include flexItem(row, space-around);
+          .google-sign-in {
+        
+            padding: 0.8rem 1rem;
+            font-size: 0.88em;
+          }
+
+          .apple-sign-in {
+         
+            padding: 0.8rem 1.2rem;
+            font-size: 0.88em;
+          }
+        }
+
+        .get-started {
+          margin-top: 2rem;
+          @include flexItem(row, flex-start);
+          align-items: center;
+          color: #979da4;
+
+          a {
+            margin-left: 1rem;
+            color: #4272ac;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .image {
+      display: none;
     }
   }
 

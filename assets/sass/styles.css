@@ -239,6 +239,34 @@ header h1 {
   left: 10px;
 }
 
+.how-we-work {
+  padding: 7rem 0;
+}
+
+.how-we-work h1 {
+  font-size: 3.2em;
+  font-weight: bolder;
+  margin-bottom: 3rem;
+}
+
+.how-we-work img {
+  border-radius: 1rem;
+}
+
+.how-we-work .work-flow {
+  margin: 1.4rem 0;
+}
+
+.how-we-work .work-flow .instruction h4,
+.how-we-work .work-flow .instruction h5 {
+  font-weight: bold;
+}
+
+.how-we-work .work-flow .instruction p {
+  line-height: 1.33rem;
+  font-size: 0.86em;
+}
+
 .featured-jobs {
   padding: 7rem 0;
 }
@@ -416,34 +444,6 @@ header h1 {
   border-radius: 0.4rem;
   font-size: 0.85em;
   cursor: pointer;
-}
-
-.how-we-work {
-  padding: 7rem 0;
-}
-
-.how-we-work h1 {
-  font-size: 3.2em;
-  font-weight: bolder;
-  margin-bottom: 3rem;
-}
-
-.how-we-work img {
-  border-radius: 1rem;
-}
-
-.how-we-work .work-flow {
-  margin: 1.4rem 0;
-}
-
-.how-we-work .work-flow .instruction h4,
-.how-we-work .work-flow .instruction h5 {
-  font-weight: bold;
-}
-
-.how-we-work .work-flow .instruction p {
-  line-height: 1.33rem;
-  font-size: 0.86em;
 }
 
 .get-reviewed {
@@ -629,6 +629,263 @@ header h1 {
   border: none;
 }
 
+.login-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-page .form {
+  width: 50%;
+}
+
+.login-page .form form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.login-page .form form h1 {
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+
+.login-page .form form input {
+  background: #edf2f7;
+  padding: 0.6rem 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.login-page .form form input::-webkit-input-placeholder {
+  color: #7a828a;
+  font-size: 0.88em;
+}
+
+.login-page .form form input:-ms-input-placeholder {
+  color: #7a828a;
+  font-size: 0.88em;
+}
+
+.login-page .form form input::-ms-input-placeholder {
+  color: #7a828a;
+  font-size: 0.88em;
+}
+
+.login-page .form form input::placeholder {
+  color: #7a828a;
+  font-size: 0.88em;
+}
+
+.login-page .form form .forgot-password {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.login-page .form form .forgot-password a {
+  color: #315581;
+  text-decoration: none;
+}
+
+.login-page .form form button {
+  margin-top: 2.5rem;
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  background: #4272ac;
+  -webkit-box-shadow: 0px 6px 2px -4px rgba(14, 14, 44, 0.1), inset 0px -1px 0px rgba(14, 14, 44, 0.4);
+          box-shadow: 0px 6px 2px -4px rgba(14, 14, 44, 0.1), inset 0px -1px 0px rgba(14, 14, 44, 0.4);
+  border-radius: 8px;
+  padding: 0.6rem;
+  border: none;
+  font-size: 0.88em;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.login-page .form form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-page .form form div .divider {
+  width: 35%;
+  height: 1px;
+  background-color: #f5f4f7;
+}
+
+.login-page .form form div .or {
+  margin: 2rem 0;
+  color: #979da4;
+}
+
+.login-page .form form .multiple-sign-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-page .form form .multiple-sign-in .google-sign-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-page .form form .multiple-sign-in .google-sign-in img {
+  margin-right: 0.5rem;
+}
+
+.login-page .form form .multiple-sign-in .apple-sign-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  background-color: #0B0706;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-page .form form .multiple-sign-in .apple-sign-in img {
+  margin-right: 0.5rem;
+}
+
+.login-page .form form .get-started {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #979da4;
+}
+
+.login-page .form form .get-started a {
+  margin-left: 1rem;
+  color: #4272ac;
+  text-decoration: none;
+}
+
+.login-page .image {
+  width: 50%;
+  height: 100vh;
+}
+
+.login-page .image img {
+  width: 100%;
+  height: 100%;
+}
+
 .footer-bg {
   padding: 4rem 0;
   background-color: #0B0706;
@@ -659,6 +916,40 @@ header h1 {
 
 .footer-bg footer .social-media img {
   width: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .login-page .form {
+    width: 50%;
+  }
+  .login-page .form form {
+    width: 86%;
+    margin: 0 auto;
+  }
+  .login-page .form form h1 {
+    margin-bottom: 2rem;
+  }
+  .login-page .form form .forgot-password {
+    margin-top: 1rem;
+  }
+  .login-page .form form div .divider {
+    width: 35%;
+    height: 1px;
+  }
+  .login-page .form form div .or {
+    margin: 2rem 0;
+  }
+  .login-page .form form .get-started {
+    margin-top: 2rem;
+  }
+  .login-page .image {
+    width: 50%;
+    height: 100vh;
+  }
+  .login-page .image img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -702,7 +993,7 @@ header h1 {
     transition: all 0.5s ease-in-out;
   }
   .menu-btn__burger {
-    width: 27px;
+    width: 40px;
     height: 3px;
     background: #0B0706;
     -webkit-transition: all 0.5s ease-in-out;
@@ -818,6 +1109,27 @@ header h1 {
   header h1 img {
     width: 4rem;
   }
+  .how-we-work {
+    padding: 5rem 0;
+  }
+  .how-we-work h1 {
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+  }
+  .how-we-work img {
+    border-radius: 1rem;
+  }
+  .how-we-work .work-flow {
+    margin: 1rem 0;
+  }
+  .how-we-work .work-flow .instruction h4,
+  .how-we-work .work-flow .instruction h5 {
+    font-weight: bold;
+  }
+  .how-we-work .work-flow .instruction p {
+    line-height: 1.33rem;
+    font-size: 0.83em;
+  }
   .featured-jobs {
     padding: 5rem 0;
   }
@@ -861,27 +1173,6 @@ header h1 {
   }
   .featured-jobs .jobs-card .date-bid .bid {
     padding: 0.5rem 1rem;
-    font-size: 0.83em;
-  }
-  .how-we-work {
-    padding: 5rem 0;
-  }
-  .how-we-work h1 {
-    font-size: 2.2em;
-    margin-bottom: 1.5rem;
-  }
-  .how-we-work img {
-    border-radius: 1rem;
-  }
-  .how-we-work .work-flow {
-    margin: 1rem 0;
-  }
-  .how-we-work .work-flow .instruction h4,
-  .how-we-work .work-flow .instruction h5 {
-    font-weight: bold;
-  }
-  .how-we-work .work-flow .instruction p {
-    line-height: 1.33rem;
     font-size: 0.83em;
   }
   .get-reviewed {
@@ -967,6 +1258,86 @@ header h1 {
     font-size: 0.83em;
     border: none;
   }
+  .login-page {
+    padding: 4rem 0;
+  }
+  .login-page .form {
+    width: 100%;
+  }
+  .login-page .form form {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .login-page .form form h1 {
+    margin-bottom: 2rem;
+  }
+  .login-page .form form button {
+    font-size: 0.8em;
+  }
+  .login-page .form form div .divider {
+    width: 35%;
+    height: 1px;
+    background-color: #f5f4f7;
+  }
+  .login-page .form form div .or {
+    margin: 2rem 0;
+    color: #979da4;
+    font-size: 0.89em;
+  }
+  .login-page .form form .multiple-sign-in {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .login-page .form form .multiple-sign-in .google-sign-in {
+    padding: 0.8rem 1rem;
+    font-size: 0.88em;
+  }
+  .login-page .form form .multiple-sign-in .apple-sign-in {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.88em;
+  }
+  .login-page .form form .get-started {
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #979da4;
+  }
+  .login-page .form form .get-started a {
+    margin-left: 1rem;
+    color: #4272ac;
+    text-decoration: none;
+  }
+  .login-page .image {
+    display: none;
+  }
   footer .description {
     margin-top: 1rem;
     margin-bottom: 1.4rem;
@@ -1000,6 +1371,27 @@ header h1 {
   }
   header h1 img {
     width: 3.5rem;
+  }
+  .how-we-work {
+    padding: 3rem 0;
+  }
+  .how-we-work h1 {
+    font-size: 1.6em;
+    margin-bottom: 1.5rem;
+  }
+  .how-we-work img {
+    border-radius: 1rem;
+  }
+  .how-we-work .work-flow {
+    margin: 1rem 0;
+  }
+  .how-we-work .work-flow .instruction h4,
+  .how-we-work .work-flow .instruction h5 {
+    font-weight: bold;
+  }
+  .how-we-work .work-flow .instruction p {
+    line-height: 1.33rem;
+    font-size: 0.83em;
   }
   .featured-jobs {
     padding: 3rem 0;
@@ -1044,27 +1436,6 @@ header h1 {
   }
   .featured-jobs .jobs-card .date-bid .bid {
     padding: 0.5rem 1rem;
-    font-size: 0.83em;
-  }
-  .how-we-work {
-    padding: 3rem 0;
-  }
-  .how-we-work h1 {
-    font-size: 1.6em;
-    margin-bottom: 1.5rem;
-  }
-  .how-we-work img {
-    border-radius: 1rem;
-  }
-  .how-we-work .work-flow {
-    margin: 1rem 0;
-  }
-  .how-we-work .work-flow .instruction h4,
-  .how-we-work .work-flow .instruction h5 {
-    font-weight: bold;
-  }
-  .how-we-work .work-flow .instruction p {
-    line-height: 1.33rem;
     font-size: 0.83em;
   }
   .get-reviewed {
@@ -1192,10 +1563,31 @@ header h1 {
     width: 94%;
   }
   header h1 {
-    font-size: 1.6em;
+    font-size: 1.7em;
   }
   header h1 img {
     width: 2.7rem;
+  }
+  .how-we-work {
+    padding: 3rem 0;
+  }
+  .how-we-work h1 {
+    font-size: 1.6em;
+    margin-bottom: 1.5rem;
+  }
+  .how-we-work img {
+    border-radius: 1rem;
+  }
+  .how-we-work .work-flow {
+    margin: 1rem 0;
+  }
+  .how-we-work .work-flow .instruction h4,
+  .how-we-work .work-flow .instruction h5 {
+    font-weight: bold;
+  }
+  .how-we-work .work-flow .instruction p {
+    line-height: 1.33rem;
+    font-size: 0.83em;
   }
   .featured-jobs {
     padding: 3rem 0;
@@ -1240,27 +1632,6 @@ header h1 {
   }
   .featured-jobs .jobs-card .date-bid .bid {
     padding: 0.5rem 1rem;
-    font-size: 0.83em;
-  }
-  .how-we-work {
-    padding: 3rem 0;
-  }
-  .how-we-work h1 {
-    font-size: 1.6em;
-    margin-bottom: 1.5rem;
-  }
-  .how-we-work img {
-    border-radius: 1rem;
-  }
-  .how-we-work .work-flow {
-    margin: 1rem 0;
-  }
-  .how-we-work .work-flow .instruction h4,
-  .how-we-work .work-flow .instruction h5 {
-    font-weight: bold;
-  }
-  .how-we-work .work-flow .instruction p {
-    line-height: 1.33rem;
     font-size: 0.83em;
   }
   .get-reviewed {
@@ -1308,7 +1679,7 @@ header h1 {
     margin-top: 1rem;
   }
   .get-reviewed .large-button button {
-    padding: 0.7rem 1.3rem;
+    padding: 0.5rem 1.2rem;
     font-size: 0.83em;
   }
   .subscribe {
@@ -1345,6 +1716,76 @@ header h1 {
     padding: 0.5rem 1.2rem;
     font-size: 0.83em;
     border: none;
+  }
+  .login-page {
+    padding: 4rem 0;
+  }
+  .login-page .form {
+    width: 100%;
+  }
+  .login-page .form form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .login-page .form form h1 {
+    margin-bottom: 2rem;
+  }
+  .login-page .form form button {
+    font-size: 0.8em;
+  }
+  .login-page .form form div .divider {
+    width: 35%;
+    height: 1px;
+    background-color: #f5f4f7;
+  }
+  .login-page .form form div .or {
+    margin: 2rem 0;
+    color: #979da4;
+    font-size: 0.89em;
+  }
+  .login-page .form form .multiple-sign-in .google-sign-in {
+    padding: 0.8rem 0.7rem;
+    font-size: 0.8em;
+  }
+  .login-page .form form .multiple-sign-in .google-sign-in img {
+    margin-right: 0.3rem;
+  }
+  .login-page .form form .multiple-sign-in .apple-sign-in {
+    padding: 0.8rem 0.7rem;
+    font-size: 0.8em;
+  }
+  .login-page .form form .multiple-sign-in .apple-sign-in img {
+    margin-right: 0.3rem;
+  }
+  .login-page .form form .get-started {
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #979da4;
+  }
+  .login-page .form form .get-started a {
+    margin-left: 1rem;
+    color: #4272ac;
+    text-decoration: none;
+  }
+  .login-page .image {
+    display: none;
   }
   .footer-bg {
     padding: 3rem 0;
