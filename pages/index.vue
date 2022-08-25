@@ -53,6 +53,24 @@
 
     <!-- End of Hero Section -->
 
+    <!-- Carousel Section -->
+    <div id="paginated_gallery" class="gallery">
+      <div class="gallery_scroller">
+        <img src="@/assets/images/slider-placeholder-01.png" alt="..." />
+        <img src="@/assets/images/slider-placeholder-02.png" alt="..." />
+        <img src="@/assets/images/slider-placeholder-03.png" alt="..." />
+        <img src="@/assets/images/slider-placeholder-01.png" alt="..." />
+        <img src="@/assets/images/slider-placeholder-01.png" alt="..." />
+        <img src="@/assets/images/slider-placeholder-02.png" alt="..." />
+        <img src="@/assets/images/slider-placeholder-03.png" alt="..." />
+        <img src="@/assets/images/slider-placeholder-01.png" alt="..." />
+      </div>
+      <span @click="scrollToPrevPage" class="btn prev"></span>
+      <span @click="scrollToNextPage" class="btn next"></span>
+    </div>
+
+    <!-- End of Carousel Section -->
+
     <!-- Featured Jobs -->
     <div class="featured-jobs">
       <div class="text-center"><h1>Featured Jobs</h1></div>
@@ -133,7 +151,6 @@
                 <img src="@/assets/icons/location.svg" alt="Location Icon" />
                 <div class="option">Remote <span>|</span></div>
                 <div class="option">Worldwide <span>|</span></div>
-                
               </div>
               <div class="divider"></div>
               <div class="date-bid">
@@ -861,6 +878,22 @@ const removeNavbar = () => {
   nav.classList.toggle("active");
   navItem.classList.toggle("active");
 };
+
+const scrollToNextPage = () => {
+  const gallery = document.querySelector("#paginated_gallery");
+  const gallery_scroller = gallery.querySelector(".gallery_scroller");
+  const gallery_item_size = gallery_scroller.querySelector("img").clientWidth;
+  gallery_scroller.scrollBy(gallery_item_size, 0);
+}
+
+const scrollToPrevPage = () => {
+   const gallery = document.querySelector("#paginated_gallery");
+  const gallery_scroller = gallery.querySelector(".gallery_scroller");
+  const gallery_item_size = gallery_scroller.querySelector("img").clientWidth;
+  gallery_scroller.scrollBy(-gallery_item_size, 0);
+}
+
+
 </script>
 
 <style>
