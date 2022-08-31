@@ -173,70 +173,107 @@ header {
 }
 
 header h1 {
-  font-size: 5em;
+  font-size: 2.6em;
+  font-weight: bolder;
 }
 
-.gallery {
-  position: relative;
-  max-width: 85%;
-  margin: 0 auto;
-  padding: 0 10;
+header p {
+  margin-top: 2rem;
 }
 
-.gallery_scroller {
-  /* snap mandatory on horizontal axis  */
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-  overflow-x: scroll;
-  overflow-y: hidden;
+header .row-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* Enable Safari touch scrolling physics which is needed for scroll snap */
-  -webkit-overflow-scrolling: touch;
+  margin-top: 2rem;
 }
 
-.gallery_scroller {
-  -ms-overflow-style: none;
+header .row-btn button {
+  padding: 0.7rem 1.4rem;
+  background-color: #4aae8c;
+  color: #fff;
+  border-radius: 0.4rem;
+  font-size: 0.85em;
+  border: 0.1rem solid #4aae8c;
 }
 
-.gallery_scroller::-webkit-scrollbar {
-  display: none;
+header .row-btn button:last-child {
+  margin-left: 1rem;
+  background-color: #fff;
+  color: #0B0706;
+  border: 0.1rem solid #505780;
+  font-weight: bold;
 }
 
-.gallery_scroller img {
-  /* snap align center  */
-  scroll-snap-align: center;
-  margin: 10px;
+header .hero-animation {
+  padding: 4rem;
+  background-color: #8cdfb3;
+}
+
+header .hero-animation .outer-circle {
   position: relative;
-  border-radius: 10px;
-}
-
-.gallery .btn {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  height: 30px;
-  width: 30px;
+  width: 350px;
+  height: 350px;
+  background-color: #fff;
+  border: 0.5px solid #a6b7d4;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  z-index: 1;
 }
 
-.gallery .btn.next {
-  background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M25.557 14.7L13.818 2.961 16.8 0l16.8 16.8-16.8 16.8-2.961-2.961L25.557 18.9H0v-4.2z" fill="%23FFF" fill-rule="evenodd"/></svg>');
-  right: 10px;
+header .hero-animation .outer-circle .inner-circle {
+  width: 250px;
+  height: 250px;
+  -webkit-transform: translate(20%, 20%);
+          transform: translate(20%, 20%);
+  background-color: #8cdfb3;
+  border: 0.5px solid #8cdfb3;
+  border-radius: 50%;
 }
 
-.gallery .btn.prev {
-  background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M33.6 14.7H8.043L19.782 2.961 16.8 0 0 16.8l16.8 16.8 2.961-2.961L8.043 18.9H33.6z" fill="%23FFF" fill-rule="evenodd"/></svg>');
-  left: 10px;
+header .hero-animation .outer-circle .inner-circle .circle {
+  width: 150px;
+  height: 150px;
+  -webkit-transform: translate(34%, 33%);
+          transform: translate(34%, 33%);
+  background-color: #fff;
+  border: 0.5px solid #fff;
+  border-radius: 50%;
+}
+
+.popular-category {
+  padding: 7rem 0;
+}
+
+.popular-category h1 {
+  font-size: 3.2em;
+  font-weight: bolder;
+  margin-bottom: 3rem;
+}
+
+.popular-category .popular-card {
+  margin: 0.7rem 0;
+  padding: 2rem;
+  background: #f7f9fc;
+  border-radius: 1rem;
+}
+
+.popular-category .popular-card h3 {
+  margin-top: 2rem;
+  font-weight: bold;
 }
 
 .how-we-work {
@@ -446,85 +483,27 @@ header h1 {
   cursor: pointer;
 }
 
-.get-reviewed {
+.get-started {
   padding: 5rem 0;
-  background-color: #f3f5f6;
+  background-color: #f7fafc;
 }
 
-.get-reviewed h1 {
-  font-size: 3.2em;
-  font-weight: bolder;
-  margin-bottom: 3rem;
+.get-started h3 {
+  font-weight: bold;
 }
 
-.get-reviewed .review-blur {
-  position: relative;
-  height: 42rem;
-  overflow-y: hidden;
-  overflow-x: hidden;
+.get-started .lead-text {
+  margin-top: 2rem;
 }
 
-.get-reviewed .review-blur .blur {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 245, 246, 0)), to(#f3f5f6));
-  background: linear-gradient(180deg, rgba(243, 245, 246, 0) 0%, #f3f5f6 100%);
-}
-
-.get-reviewed .review-card {
-  padding: 1.1rem;
-  margin: 0.78rem 0;
-  background-color: #fff;
-  border-radius: 0.8rem;
-}
-
-.get-reviewed .review-card .img-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.get-reviewed .review-card .img-name img {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  margin-right: 0.5rem;
-}
-
-.get-reviewed .review-card .img-name div .name {
-  color: #6f1df4;
-  font-size: 0.83em;
-}
-
-.get-reviewed .review-card .img-name div .username {
-  color: rgba(60, 60, 67, 0.5);
-  font-size: 0.83em;
-}
-
-.get-reviewed .review-card p {
-  font-size: 0.86em;
-  margin-top: 0.7rem;
-}
-
-.get-reviewed .review-card .link-date {
+.get-started button {
+  margin-top: 2rem;
+  padding: 0.7rem 1.4rem;
+  background-color: #4aae8c;
+  color: #fff;
+  border-radius: 0.4rem;
+  font-size: 0.85em;
+  border: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,26 +524,8 @@ header h1 {
           align-items: center;
 }
 
-.get-reviewed .review-card .link-date .link {
-  font-size: 0.83em;
-  color: rgba(60, 60, 67, 0.5);
-}
-
-.get-reviewed .review-card .link-date .date {
-  font-size: 0.83em;
-  color: rgba(60, 60, 67, 0.5);
-}
-
-.get-reviewed .large-button {
-  margin-top: 2rem;
-}
-
-.get-reviewed .large-button button {
-  padding: 0.6rem 1.2rem;
-  border: 1px solid #4c6fff;
-  border-radius: 8px;
-  color: #4c6fff;
-  font-size: 0.85em;
+.get-started button img {
+  margin-left: 0.7rem;
 }
 
 .subscribe {
@@ -619,14 +580,57 @@ header h1 {
   font-size: 0.88em;
 }
 
+.subscribe .subscribe-border .form-box .btn-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .subscribe .subscribe-border .form-box button {
   margin-top: 1.5rem;
   padding: 0.7rem 1.4rem;
-  background-color: #4c6fff;
+  background-color: #00cc52;
   color: #fff;
   border-radius: 0.4rem;
   font-size: 0.85em;
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe .subscribe-border .form-box button img {
+  margin-left: 0.7rem;
 }
 
 .login-page {
@@ -1109,6 +1113,9 @@ header h1 {
   header h1 img {
     width: 4rem;
   }
+  .popular-category {
+    padding: 5rem 0;
+  }
   .how-we-work {
     padding: 5rem 0;
   }
@@ -1372,6 +1379,17 @@ header h1 {
   header h1 img {
     width: 3.5rem;
   }
+  .popular-category {
+    padding: 4rem 0;
+  }
+  .popular-category h1 {
+    font-size: 1.6em;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+  }
+  .popular-category .popular-card h3 {
+    font-size: 1.3em;
+  }
   .how-we-work {
     padding: 3rem 0;
   }
@@ -1568,6 +1586,86 @@ header h1 {
   header h1 img {
     width: 2.7rem;
   }
+  header p {
+    margin-top: 2rem;
+  }
+  header .row-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 2rem;
+  }
+  header .row-btn button {
+    padding: 0.7rem 1.4rem;
+    background-color: #4aae8c;
+    color: #fff;
+    border-radius: 0.4rem;
+    font-size: 0.85em;
+    border: 0.1rem solid #4aae8c;
+  }
+  header .row-btn button:last-child {
+    margin-left: 1rem;
+    background-color: #fff;
+    color: #0B0706;
+    border: 0.1rem solid #505780;
+    font-weight: bold;
+  }
+  header .hero-animation {
+    margin-top: 2rem;
+    padding: 4rem;
+  }
+  header .hero-animation .outer-circle {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    border: 0.5px solid #a6b7d4;
+    border-radius: 50%;
+  }
+  header .hero-animation .outer-circle .inner-circle {
+    width: 150px;
+    height: 150px;
+    -webkit-transform: translate(20%, 20%);
+            transform: translate(20%, 20%);
+    background-color: #8cdfb3;
+    border: 0.5px solid #8cdfb3;
+    border-radius: 50%;
+  }
+  header .hero-animation .outer-circle .inner-circle .circle {
+    width: 100px;
+    height: 100px;
+    -webkit-transform: translate(34%, 33%);
+            transform: translate(34%, 33%);
+    background-color: #fff;
+    border: 0.5px solid #fff;
+    border-radius: 50%;
+  }
+  .popular-category {
+    padding: 3rem 0;
+  }
+  .popular-category h1 {
+    font-size: 1.6em;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+  }
+  .popular-category .popular-card h3 {
+    font-size: 1.3em;
+  }
   .how-we-work {
     padding: 3rem 0;
   }
@@ -1634,53 +1732,12 @@ header h1 {
     padding: 0.5rem 1rem;
     font-size: 0.83em;
   }
-  .get-reviewed {
+  .get-started {
     padding: 3rem 0;
   }
-  .get-reviewed h1 {
+  .get-started h1 {
     font-size: 1.6em;
     margin-bottom: 1.5rem;
-  }
-  .get-reviewed .review-blur {
-    position: relative;
-    height: 46rem;
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
-  .get-reviewed .review-blur .blur {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 245, 246, 0)), to(#f3f5f6));
-    background: linear-gradient(180deg, rgba(243, 245, 246, 0) 0%, #f3f5f6 100%);
-  }
-  .get-reviewed .review-card {
-    padding: 1.1rem;
-  }
-  .get-reviewed .review-card .img-name div .name {
-    font-size: 0.85em;
-  }
-  .get-reviewed .review-card .img-name div .username {
-    font-size: 0.85em;
-  }
-  .get-reviewed .review-card p {
-    font-size: 0.85em;
-    margin-top: 0.7rem;
-  }
-  .get-reviewed .review-card .link-date .link {
-    font-size: 0.83em;
-  }
-  .get-reviewed .review-card .link-date .date {
-    font-size: 0.83em;
-  }
-  .get-reviewed .large-button {
-    margin-top: 1rem;
-  }
-  .get-reviewed .large-button button {
-    padding: 0.5rem 1.2rem;
-    font-size: 0.83em;
   }
   .subscribe {
     padding: 3rem 0;

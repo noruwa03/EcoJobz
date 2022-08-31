@@ -42,31 +42,95 @@
 
     <!-- Hero Section -->
     <header>
-      <h1>
-        Hire the best
-        <span><img src="@/assets/images/hero-image-01.svg" alt="" /></span>
-        freelancer for your design and development
-        <span><img src="@/assets/images/hero-image-02.svg" alt="" /></span>
-        project
-      </h1>
+      <div class="row align-items-center justify-content-between">
+        <div class="col-12 col-sm-6 col-lg-5">
+          <h1>Hire freelancers to make things happen.</h1>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <div class="row-btn">
+          <button>Find Job</button>
+          <button>Find Freelancer</button>
+        </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-5">
+          <div class="hero-animation">
+            <!-- <div class="outer-circle">
+              <div class="inner-circle">
+                <div class="circle"></div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        
+      </div>
     </header>
 
     <!-- End of Hero Section -->
 
-    <!-- Carousel Section -->
-    <div id="paginated_gallery" class="gallery">
-      <div class="gallery_scroller">
-        <img src="@/assets/images/slider-placeholder-01.png" alt="..." />
-        <img src="@/assets/images/slider-placeholder-02.png" alt="..." />
-        <img src="@/assets/images/slider-placeholder-03.png" alt="..." />
-        <img src="@/assets/images/space-4.jpg" alt="..." />
-        <img src="@/assets/images/slider-placeholder-01.png" alt="..." />
+    <!-- Popular Category -->
+    <div class="popular-category">
+      <div class="text-center">
+        <h1>Most Popular Categories</h1>
       </div>
-      <span @click="scrollToPrevPage" class="btn prev"></span>
-      <span @click="scrollToNextPage" class="btn next"></span>
+
+      <div class="container-lg">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="popular-card">
+              <div class="text-center">
+                <img src="@/assets/icons/web-dev.svg" alt="" />
+                <h3>Website Development</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="popular-card">
+              <div class="text-center">
+                <img src="@/assets/icons/ui-ux.svg" alt="" />
+                <h3>UI/UX Design</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="popular-card">
+              <div class="text-center">
+                <img src="@/assets/icons/data-analysis.svg" alt="" />
+                <h3>Data Analysis</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="popular-card">
+              <div class="text-center">
+                <img src="@/assets/icons/content-writing.svg" alt="" />
+                <h3>Content Writing</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="popular-card">
+              <div class="text-center">
+                <img src="@/assets/icons/logo-branding.svg" alt="" />
+                <h3>Logo Branding</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="popular-card">
+              <div class="text-center">
+                <img src="@/assets/icons/ai-data-model.svg" alt="" />
+                <h3>AI/Data modeling</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- End of Carousel Section -->
+    <!-- End of Popular Category -->
 
     <!-- How-We-Work -->
     <div class="how-we-work">
@@ -163,7 +227,7 @@
     <!-- End of How-We-Work -->
 
     <!-- Featured Jobs -->
-    <div class="featured-jobs">
+    <!-- <div class="featured-jobs">
       <div class="text-center"><h1>Featured Jobs</h1></div>
       <div class="container-lg">
         <div class="row align-items-center justify-content-between">
@@ -412,325 +476,56 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- End of Featured Jobs -->
-
-    
 
     <!-- Get Reviewed -->
 
-    <div class="get-reviewed">
-      <div class="text-center"><h1>Get Reviewed</h1></div>
-
+    <div class="get-started">
       <div class="container-lg">
-        <div class="review-blur">
-          <div
-            class="
-              row
-              align-items-center
-              justify-content-sm-around justify-content-between
-            "
-          >
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="review-card">
-                <div class="img-name">
-                  <img src="@/assets/images/placeholder-01.svg" alt="" />
-                  <div>
-                    <div class="name">Darin Nguyen</div>
-                    <div class="username">@staking</div>
-                  </div>
-                </div>
-                <p>Faucibus eu condimentum maecenas sollicitudin vitae.</p>
-                <div class="link-date">
-                  <NuxtLink class="link" to="/" target="_blank">
-                    Show original
-                  </NuxtLink>
-                  <div class="date">22.03.2021</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="review-card">
-                <div class="img-name">
-                  <img src="@/assets/images/placeholder-01.svg" alt="" />
-                  <div>
-                    <div class="name">Darin Nguyen</div>
-                    <div class="username">@staking</div>
-                  </div>
-                </div>
-                <p>Faucibus eu condimentum maecenas sollicitudin vitae.</p>
-                <div class="link-date">
-                  <NuxtLink class="link" to="/" target="_blank">
-                    Show original
-                  </NuxtLink>
-                  <div class="date">22.03.2021</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="review-card">
-                <div class="img-name">
-                  <img src="@/assets/images/placeholder-02.svg" alt="" />
-                  <div>
-                    <div class="name">Nur Wainwright</div>
-                    <div class="username">@flawless</div>
-                  </div>
-                </div>
-                <p>
-                  Volutpat nec, dictumst adipiscing mauris molestie a. Proin sit
-                  libero tristique suspendisse.
-                </p>
-                <div class="link-date">
-                  <NuxtLink class="link" to="/" target="_blank">
-                    Show original
-                  </NuxtLink>
-                  <div class="date">22.03.2021</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="review-card">
-                <div class="img-name">
-                  <img src="@/assets/images/placeholder-02.svg" alt="" />
-                  <div>
-                    <div class="name">Nur Wainwright</div>
-                    <div class="username">@flawless</div>
-                  </div>
-                </div>
-                <p>
-                  There’s no other program that walks you through exactly what
-                  you need to know to start an online store fast, written by
-                  someone who has built several 7-figure ecommerce businesses
-                  from scratch.
-                </p>
-                <div class="link-date">
-                  <NuxtLink class="link" to="/" target="_blank">
-                    Show original
-                  </NuxtLink>
-                  <div class="date">22.03.2021</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="review-card">
-                <div class="img-name">
-                  <img src="@/assets/images/placeholder-03.svg" alt="" />
-                  <div>
-                    <div class="name">Farah Morin</div>
-                    <div class="username">@lice</div>
-                  </div>
-                </div>
-                <p>
-                  Montes, ornare purus vestibulum, eget nec sem velit. Pharetra
-                  dolor auctor facilisis nunc condimentum orci massa.
-                </p>
-                <div class="link-date">
-                  <NuxtLink class="link" to="/" target="_blank">
-                    Show original
-                  </NuxtLink>
-                  <div class="date">22.03.2021</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="review-card">
-                <div class="img-name">
-                  <img src="@/assets/images/placeholder-03.svg" alt="" />
-                  <div>
-                    <div class="name">Farah Morin</div>
-                    <div class="username">@lice</div>
-                  </div>
-                </div>
-                <p>
-                  There’s no other program that walks you through exactly what
-                  you need to know to start an online store fast, written by
-                  someone who has built several 7-figure ecommerce businesses
-                  from scratch.
-                </p>
-                <div class="link-date">
-                  <NuxtLink class="link" to="/" target="_blank">
-                    Show original
-                  </NuxtLink>
-                  <div class="date">22.03.2021</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="review-card">
-                <div class="img-name">
-                  <img src="@/assets/images/placeholder-05.svg" alt="" />
-                  <div>
-                    <div class="name">Glen Barton</div>
-                    <div class="username">@forth</div>
-                  </div>
-                </div>
-                <p>
-                  Montes, ornare purus vestibulum, eget nec sem velit. Pharetra
-                  dolor auctor facilisis nunc condimentum orci massa.
-                </p>
-                <div class="link-date">
-                  <NuxtLink class="link" to="/" target="_blank">
-                    Show original
-                  </NuxtLink>
-                  <div class="date">22.03.2021</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="review-card">
-                <div class="img-name">
-                  <img src="@/assets/images/placeholder-05.svg" alt="" />
-                  <div>
-                    <div class="name">Glen Barton</div>
-                    <div class="username">@forth</div>
-                  </div>
-                </div>
-                <p>Nisl, eget imperdiet pharetra consectetur.</p>
-                <div class="link-date">
-                  <NuxtLink class="link" to="/" target="_blank">
-                    Show original
-                  </NuxtLink>
-                  <div class="date">22.03.2021</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="review-card">
-                <div class="img-name">
-                  <img src="@/assets/images/placeholder-01.svg" alt="" />
-                  <div>
-                    <div class="name">Darin Nguyen</div>
-                    <div class="username">@staking</div>
-                  </div>
-                </div>
-                <p>Faucibus eu condimentum maecenas sollicitudin vitae.</p>
-                <div class="link-date">
-                  <NuxtLink class="link" to="/" target="_blank">
-                    Show original
-                  </NuxtLink>
-                  <div class="date">22.03.2021</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="review-card">
-                <div class="img-name">
-                  <img src="@/assets/images/placeholder-01.svg" alt="" />
-                  <div>
-                    <div class="name">Darin Nguyen</div>
-                    <div class="username">@staking</div>
-                  </div>
-                </div>
-                <p>Faucibus eu condimentum maecenas sollicitudin vitae.</p>
-                <div class="link-date">
-                  <NuxtLink class="link" to="/" target="_blank">
-                    Show original
-                  </NuxtLink>
-                  <div class="date">22.03.2021</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="review-card">
-                <div class="img-name">
-                  <img src="@/assets/images/placeholder-01.svg" alt="" />
-                  <div>
-                    <div class="name">Darin Nguyen</div>
-                    <div class="username">@staking</div>
-                  </div>
-                </div>
-                <p>Faucibus eu condimentum maecenas sollicitudin vitae.</p>
-                <div class="link-date">
-                  <NuxtLink class="link" to="/" target="_blank">
-                    Show original
-                  </NuxtLink>
-                  <div class="date">22.03.2021</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="review-card">
-                <div class="img-name">
-                  <img src="@/assets/images/placeholder-03.svg" alt="" />
-                  <div>
-                    <div class="name">Darin Nguyen</div>
-                    <div class="username">@staking</div>
-                  </div>
-                </div>
-                <p>Faucibus eu condimentum maecenas sollicitudin vitae.</p>
-                <div class="link-date">
-                  <NuxtLink class="link" to="/" target="_blank">
-                    Show original
-                  </NuxtLink>
-                  <div class="date">22.03.2021</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="review-card">
-                <div class="img-name">
-                  <img src="@/assets/images/placeholder-02.svg" alt="" />
-                  <div>
-                    <div class="name">Darin Nguyen</div>
-                    <div class="username">@staking</div>
-                  </div>
-                </div>
-                <p>Faucibus eu condimentum maecenas sollicitudin vitae.</p>
-                <div class="link-date">
-                  <NuxtLink class="link" to="/" target="_blank">
-                    Show original
-                  </NuxtLink>
-                  <div class="date">22.03.2021</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-5">
-              <div class="review-card">
-                <div class="img-name">
-                  <img src="@/assets/images/placeholder-01.svg" alt="" />
-                  <div>
-                    <div class="name">Darin Nguyen</div>
-                    <div class="username">@staking</div>
-                  </div>
-                </div>
-                <p>Faucibus eu condimentum maecenas sollicitudin vitae.</p>
-                <div class="link-date">
-                  <NuxtLink class="link" to="/" target="_blank">
-                    Show original
-                  </NuxtLink>
-                  <div class="date">22.03.2021</div>
-                </div>
-              </div>
-            </div>
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-sm-6 col-lg-5">
+            <img
+              src="@/assets/icons/connect-talent.svg"
+              class="img-fluid"
+              alt=""
+            />
           </div>
-
-          <div class="blur"></div>
+          <div class="col-12 col-sm-6 col-lg-5">
+            <h3>We help you connect with the right talent</h3>
+            <div class="lead-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </div>
+            <button>
+              Get Started
+              <img src="@/assets/icons/chevron-right-white.svg" alt="" />
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="text-center large-button">
-        <button>Large button</button>
       </div>
     </div>
 
     <!-- End of Get Reviewed -->
 
     <!-- Subscribe Section -->
-    <div class="subscribe">
+    <!-- <div class="subscribe">
       <div class="subscribe-border">
         <div class="text-center">
           <h2>Subscribe to get latest updates and news</h2>
         </div>
         <div class="form-box">
           <input type="text" placeholder="Type your e-mail" />
-          <div class="text-end"><button>Subscribe</button></div>
+          <div class="btn-end">
+            <button>
+              Get Started
+              <img src="@/assets/icons/chevron-right-white.svg" alt="" />
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- End of Subscribe Section -->
 
     <!-- Footer -->
@@ -877,22 +672,6 @@ const removeNavbar = () => {
   nav.classList.toggle("active");
   navItem.classList.toggle("active");
 };
-
-const scrollToNextPage = () => {
-  const gallery = document.querySelector("#paginated_gallery");
-  const gallery_scroller = gallery.querySelector(".gallery_scroller");
-  const gallery_item_size = gallery_scroller.querySelector("img").clientWidth;
-  gallery_scroller.scrollBy(gallery_item_size, 0);
-}
-
-const scrollToPrevPage = () => {
-   const gallery = document.querySelector("#paginated_gallery");
-  const gallery_scroller = gallery.querySelector(".gallery_scroller");
-  const gallery_item_size = gallery_scroller.querySelector("img").clientWidth;
-  gallery_scroller.scrollBy(-gallery_item_size, 0);
-}
-
-
 </script>
 
 <style>

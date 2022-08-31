@@ -136,6 +136,10 @@
     }
   }
 
+  .popular-category {
+    padding: 5rem 0;
+  }
+
   .how-we-work {
     padding: 5rem 0;
     h1 {
@@ -370,15 +374,13 @@
         }
 
         .multiple-sign-in {
-           @include flexItem(row, space-around);
+          @include flexItem(row, space-around);
           .google-sign-in {
-        
             padding: 0.8rem 1rem;
             font-size: 0.88em;
           }
 
           .apple-sign-in {
-         
             padding: 0.8rem 1.2rem;
             font-size: 0.88em;
           }

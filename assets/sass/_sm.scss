@@ -13,6 +13,21 @@
     }
   }
 
+  .popular-category {
+    padding: 4rem 0;
+    h1 {
+      font-size: 1.6em;
+      font-weight: bolder;
+      margin-bottom: 3rem;
+    }
+
+    .popular-card {
+      h3 {
+        font-size: 1.3em;
+      }
+    }
+  }
+
   .how-we-work {
     padding: 3rem 0;
     h1 {
