@@ -35,6 +35,7 @@
 
         p {
           margin-top: 2rem;
+          font-size: 1em;
         }
 
         .row-btn {
@@ -118,7 +119,7 @@
   }
 
   .popular-category {
-    padding: 3rem 0;
+    padding: 2rem 0 3rem 0;
     h1 {
       font-size: 1.6em;
       font-weight: bolder;
@@ -231,8 +232,48 @@
     padding: 3rem 0;
 
     h1 {
-      font-size: 1.6em;
+      font-size: 1.3em;
       margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+
+  .connect-talent {
+    padding: 3rem 0;
+
+    margin: 0 auto;
+    width: 94%;
+
+    .connect-row {
+      .right-talent {
+        width: 100%;
+
+        h1 {
+          font-size: 1.3em;
+        }
+
+        p {
+          margin-top: 2rem;
+          font-size: 1em;
+        }
+      }
+
+      .cards {
+        margin-top: 2rem;
+        width: 100%;
+        .talent-card {
+          h4 {
+            font-size: 1.1em;
+          }
+
+          p {
+            font-size: 1em;
+          }
+        }
+      }
     }
   }
 
@@ -324,7 +365,7 @@
           }
         }
 
-        .get-started {
+        .new-to-ecojobz {
           margin-top: 2rem;
           @include flexItem(row, flex-start);
           align-items: center;

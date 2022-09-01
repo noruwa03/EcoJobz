@@ -28,7 +28,7 @@
             </div>
           </div>
 
-          <div class="get-started">
+          <div class="new-to-ecojobz">
             New to Ecolabz? <NuxtLink to="/"> Get started </NuxtLink>
           </div>
         </form>

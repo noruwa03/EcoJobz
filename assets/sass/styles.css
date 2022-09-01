@@ -120,7 +120,7 @@ nav .nav-item-container .nav-item-list {
 }
 
 nav .nav-item-container .nav-item-list .nav-item .nav-link {
-  font-size: 1em;
+  font-size: 1.06em;
   color: #0A0A0A;
   cursor: pointer;
   margin-left: 3rem;
@@ -132,7 +132,6 @@ nav .nav-item-container .nav-item-list .nav-item:nth-of-type(4) {
 }
 
 nav .nav-item-container .nav-item-list .nav-item:nth-of-type(4) .nav-link {
-  font-size: 1em;
   color: #0A0A0A;
   cursor: pointer;
   background-color: #e4ecf7;
@@ -204,6 +203,7 @@ header .hero-row .intro h1 {
 
 header .hero-row .intro p {
   margin-top: 2rem;
+  font-size: 1.1em;
 }
 
 header .hero-row .intro .row-btn {
@@ -585,12 +585,13 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
   background-color: #f7fafc;
 }
 
-.get-started h3 {
+.get-started h1 {
   font-weight: bold;
 }
 
-.get-started .lead-text {
+.get-started p {
   margin-top: 2rem;
+  font-size: 1.1em;
 }
 
 .get-started button {
@@ -623,6 +624,125 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
 
 .get-started button img {
   margin-left: 0.7rem;
+}
+
+.connect-talent {
+  padding: 5rem 0;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.connect-talent .connect-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.connect-talent .connect-row .right-talent {
+  width: 50%;
+}
+
+.connect-talent .connect-row .right-talent h1 {
+  font-weight: bold;
+}
+
+.connect-talent .connect-row .right-talent p {
+  margin-top: 2rem;
+  font-size: 1.1em;
+}
+
+.connect-talent .connect-row .right-talent button {
+  margin-top: 2rem;
+  padding: 0.7rem 1.4rem;
+  background-color: #4aae8c;
+  color: #fff;
+  border-radius: 0.4rem;
+  font-size: 0.85em;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.connect-talent .connect-row .right-talent button img {
+  margin-left: 0.7rem;
+}
+
+.connect-talent .connect-row .cards {
+  width: 40%;
+}
+
+.connect-talent .connect-row .cards .talent-card {
+  margin: 1.5rem 0;
+  padding: 1.3rem;
+  -webkit-box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.1), 0px 4px 20px -2px rgba(50, 50, 71, 0.08);
+          box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.1), 0px 4px 20px -2px rgba(50, 50, 71, 0.08);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.connect-talent .connect-row .cards .talent-card .row-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.connect-talent .connect-row .cards .talent-card .row-item img {
+  margin-right: 1rem;
+}
+
+.connect-talent .connect-row .cards .talent-card .row-item h4 {
+  font-weight: bold;
+}
+
+.connect-talent .connect-row .cards .talent-card p {
+  margin-top: 1rem;
+  font-size: 1.06em;
 }
 
 .subscribe {
@@ -948,7 +1068,7 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
   margin-right: 0.5rem;
 }
 
-.login-page .form form .get-started {
+.login-page .form form .new-to-ecojobz {
   margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -971,7 +1091,7 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
   color: #979da4;
 }
 
-.login-page .form form .get-started a {
+.login-page .form form .new-to-ecojobz a {
   margin-left: 1rem;
   color: #4272ac;
   text-decoration: none;
@@ -1384,53 +1504,37 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     padding: 0.5rem 1rem;
     font-size: 0.83em;
   }
-  .get-reviewed {
+  .get-started {
     padding: 5rem 0;
   }
-  .get-reviewed h1 {
+  .get-started h1 {
     font-size: 2.2em;
     margin-bottom: 1.5rem;
   }
-  .get-reviewed .review-blur {
-    position: relative;
-    height: 46rem;
-    overflow-y: hidden;
-    overflow-x: hidden;
+  .connect-talent {
+    padding: 3rem 0;
+    margin: 0 auto;
+    width: 94%;
   }
-  .get-reviewed .review-blur .blur {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  .connect-talent .connect-row .right-talent {
     width: 100%;
-    height: 100px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 245, 246, 0)), to(#f3f5f6));
-    background: linear-gradient(180deg, rgba(243, 245, 246, 0) 0%, #f3f5f6 100%);
   }
-  .get-reviewed .review-card {
-    padding: 1.1rem;
+  .connect-talent .connect-row .right-talent h1 {
+    font-size: 2.2em;
   }
-  .get-reviewed .review-card .img-name div .name {
-    font-size: 0.85em;
+  .connect-talent .connect-row .right-talent p {
+    margin-top: 2rem;
+    font-size: 1em;
   }
-  .get-reviewed .review-card .img-name div .username {
-    font-size: 0.85em;
+  .connect-talent .connect-row .cards {
+    margin-top: 2rem;
+    width: 100%;
   }
-  .get-reviewed .review-card p {
-    font-size: 0.85em;
-    margin-top: 0.7rem;
+  .connect-talent .connect-row .cards .talent-card h4 {
+    font-size: 1.1em;
   }
-  .get-reviewed .review-card .link-date .link {
-    font-size: 0.83em;
-  }
-  .get-reviewed .review-card .link-date .date {
-    font-size: 0.83em;
-  }
-  .get-reviewed .large-button {
-    margin-top: 1rem;
-  }
-  .get-reviewed .large-button button {
-    padding: 0.7rem 1.3rem;
-    font-size: 0.83em;
+  .connect-talent .connect-row .cards .talent-card p {
+    font-size: 1em;
   }
   .subscribe {
     padding: 5rem 0;
@@ -1517,7 +1621,7 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     padding: 0.8rem 1.2rem;
     font-size: 0.88em;
   }
-  .login-page .form form .get-started {
+  .login-page .form form .new-to-ecojobz {
     margin-top: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1539,7 +1643,7 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
             align-items: center;
     color: #979da4;
   }
-  .login-page .form form .get-started a {
+  .login-page .form form .new-to-ecojobz a {
     margin-left: 1rem;
     color: #4272ac;
     text-decoration: none;
@@ -1763,53 +1867,37 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     padding: 0.5rem 1rem;
     font-size: 0.83em;
   }
-  .get-reviewed {
+  .get-started {
     padding: 3rem 0;
   }
-  .get-reviewed h1 {
+  .get-started h1 {
     font-size: 1.6em;
     margin-bottom: 1.5rem;
   }
-  .get-reviewed .review-blur {
-    position: relative;
-    height: 46rem;
-    overflow-y: hidden;
-    overflow-x: hidden;
+  .connect-talent {
+    padding: 3rem 0;
+    margin: 0 auto;
+    width: 94%;
   }
-  .get-reviewed .review-blur .blur {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  .connect-talent .connect-row .right-talent {
     width: 100%;
-    height: 100px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 245, 246, 0)), to(#f3f5f6));
-    background: linear-gradient(180deg, rgba(243, 245, 246, 0) 0%, #f3f5f6 100%);
   }
-  .get-reviewed .review-card {
-    padding: 1.1rem;
+  .connect-talent .connect-row .right-talent h1 {
+    font-size: 1.6em;
   }
-  .get-reviewed .review-card .img-name div .name {
-    font-size: 0.85em;
+  .connect-talent .connect-row .right-talent p {
+    margin-top: 2rem;
+    font-size: 1em;
   }
-  .get-reviewed .review-card .img-name div .username {
-    font-size: 0.85em;
+  .connect-talent .connect-row .cards {
+    margin-top: 2rem;
+    width: 100%;
   }
-  .get-reviewed .review-card p {
-    font-size: 0.85em;
-    margin-top: 0.7rem;
+  .connect-talent .connect-row .cards .talent-card h4 {
+    font-size: 1.1em;
   }
-  .get-reviewed .review-card .link-date .link {
-    font-size: 0.83em;
-  }
-  .get-reviewed .review-card .link-date .date {
-    font-size: 0.83em;
-  }
-  .get-reviewed .large-button {
-    margin-top: 1rem;
-  }
-  .get-reviewed .large-button button {
-    padding: 0.7rem 1.3rem;
-    font-size: 0.83em;
+  .connect-talent .connect-row .cards .talent-card p {
+    font-size: 1em;
   }
   .subscribe {
     padding: 3rem 0;
@@ -1915,6 +2003,7 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
   }
   header .hero-row .intro p {
     margin-top: 2rem;
+    font-size: 1em;
   }
   header .hero-row .intro .row-btn {
     display: -webkit-box;
@@ -1999,7 +2088,7 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     left: 15%;
   }
   .popular-category {
-    padding: 3rem 0;
+    padding: 2rem 0 3rem 0;
   }
   .popular-category h1 {
     font-size: 1.6em;
@@ -2079,8 +2168,36 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     padding: 3rem 0;
   }
   .get-started h1 {
-    font-size: 1.6em;
+    font-size: 1.3em;
     margin-bottom: 1.5rem;
+  }
+  .get-started p {
+    font-size: 1em;
+  }
+  .connect-talent {
+    padding: 3rem 0;
+    margin: 0 auto;
+    width: 94%;
+  }
+  .connect-talent .connect-row .right-talent {
+    width: 100%;
+  }
+  .connect-talent .connect-row .right-talent h1 {
+    font-size: 1.3em;
+  }
+  .connect-talent .connect-row .right-talent p {
+    margin-top: 2rem;
+    font-size: 1em;
+  }
+  .connect-talent .connect-row .cards {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .connect-talent .connect-row .cards .talent-card h4 {
+    font-size: 1.1em;
+  }
+  .connect-talent .connect-row .cards .talent-card p {
+    font-size: 1em;
   }
   .subscribe {
     padding: 3rem 0;
@@ -2157,7 +2274,7 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
   .login-page .form form .multiple-sign-in .apple-sign-in img {
     margin-right: 0.3rem;
   }
-  .login-page .form form .get-started {
+  .login-page .form form .new-to-ecojobz {
     margin-top: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2179,7 +2296,7 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
             align-items: center;
     color: #979da4;
   }
-  .login-page .form form .get-started a {
+  .login-page .form form .new-to-ecojobz a {
     margin-left: 1rem;
     color: #4272ac;
     text-decoration: none;

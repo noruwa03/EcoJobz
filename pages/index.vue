@@ -57,8 +57,6 @@
         </div>
         <div class="eclipse">
           <div class="hero-animation">
-          
-
             <img
               src="@/assets/icons/web-dev.svg"
               class="place-holder-01"
@@ -74,8 +72,16 @@
               class="place-holder-03"
               alt=""
             />
-            <img src="@/assets/icons/ai-data-model.svg" class="place-holder-04" alt="">
-              <img src="@/assets/icons/content-writing.svg" class="place-holder-05" alt="">
+            <img
+              src="@/assets/icons/ai-data-model.svg"
+              class="place-holder-04"
+              alt=""
+            />
+            <img
+              src="@/assets/icons/content-writing.svg"
+              class="place-holder-05"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -505,12 +511,12 @@
             />
           </div>
           <div class="col-12 col-sm-6 col-lg-5">
-            <h3>We help you connect with the right talent</h3>
-            <div class="lead-text">
+            <h1>We help you connect with the right talent</h1>
+            <p>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
-            </div>
+            </p>
             <button>
               Get Started
               <img src="@/assets/icons/chevron-right-white.svg" alt="" />
@@ -520,7 +526,56 @@
       </div>
     </div>
 
-    <!-- End of Get Reviewed -->
+    <!-- End of Get Started -->
+
+    <div class="connect-talent">
+      <div class="connect-row">
+        <div class="right-talent">
+          <h1>We help you connect with the right talent</h1>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <button>
+            Get Started
+            <img src="@/assets/icons/chevron-right-white.svg" alt="" />
+          </button>
+        </div>
+        <div class="cards">
+          <div class="talent-card">
+            <div class="row-item">
+              <img src="@/assets/icons/product-designer.svg" alt="" />
+              <h4>Product designer</h4>
+            </div>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+          </div>
+          <div class="talent-card">
+            <div class="row-item">
+              <img src="@/assets/icons/frontend-developer.svg" alt="" />
+              <h4>Frontend Developer</h4>
+            </div>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+          </div>
+          <div class="talent-card">
+            <div class="row-item">
+              <img src="@/assets/icons/visual-designer.svg" alt="" />
+              <h4>Visual designer</h4>
+            </div>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Subscribe Section -->
     <!-- <div class="subscribe">
