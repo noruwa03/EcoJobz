@@ -116,70 +116,128 @@ nav {
 }
 
 header {
-  padding: 7rem 0;
+  padding: 2.6rem 0;
   margin: 0 auto;
   width: 85%;
 
-  h1 {
-    font-size: 2.6em;
-    font-weight: bolder;
-  }
-
-  p {
-    margin-top: 2rem;
-  }
-
-  .row-btn {
-    @include flexItem(row, flex-start);
+  .hero-row {
+    @include flexItem(row, space-between);
     align-items: center;
-    margin-top: 2rem;
-    button {
-      padding: 0.7rem 1.4rem;
-      background-color: #4aae8c;
-      color: $white;
-      border-radius: 0.4rem;
-      font-size: 0.85em;
 
-      border: 0.1rem solid #4aae8c;
+    .intro {
+      width: 45%;
 
-      &:last-child {
-        margin-left: 1rem;
-        background-color: $white;
-        color: $black;
-        border: 0.1rem solid #505780;
-        font-weight: bold;
+      h1 {
+        font-size: 2.6em;
+        font-weight: bolder;
+      }
+
+      p {
+        margin-top: 2rem;
+      }
+
+      .row-btn {
+        @include flexItem(row, flex-start);
+        align-items: center;
+        margin-top: 2rem;
+        button {
+          padding: 0.7rem 1.4rem;
+          background-color: #4aae8c;
+          color: $white;
+          border-radius: 0.4rem;
+          font-size: 0.85em;
+
+          border: 0.1rem solid #4aae8c;
+
+          &:last-child {
+            margin-left: 1rem;
+            background-color: $white;
+            color: $black;
+            border: 0.1rem solid #505780;
+            font-weight: bold;
+          }
+        }
       }
     }
-  }
 
-  .hero-animation {
-    padding: 4rem;
-    background-color: rgba(140, 223, 179, 1);
-  
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
 
-    .outer-circle {
-      position: relative;
-      width: 350px;
-      height: 350px;
-      background-color: $white;
-      border: 0.5px solid #a6b7d4;
-      border-radius: 50%;
+    @keyframes anti-rotate {
+      0% {
+        transform: rotate(360deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
 
-      .inner-circle {
-        width: 250px;
-        height: 250px;
-        transform: translate(20%, 20%);
-        background-color: rgba(140, 223, 179, 1);
-        border: 0.5px solid rgba(140, 223, 179, 1);
-        border-radius: 50%;
+    .eclipse {
+      width: 50%;
+      overflow: hidden;
 
-        .circle {
-          width: 150px;
-          height: 150px;
-          transform: translate(34%, 33%);
-          background-color: $white;
-          border: 0.5px solid $white;
-          border-radius: 50%;
+      .hero-animation {
+        overflow: hiddden;
+        animation: rotate 10s linear infinite;
+        position: relative;
+      
+        background-image: url("@/assets/icons/eclipse.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80%;
+        height: 22rem;
+        margin: 4rem auto;
+        
+
+
+        img {
+          width: 4rem;
+          height: 4rem;
+          // border-radius: 50%;
+          animation: anti-rotate 10s linear infinite;
+        }
+
+        .place-holder-01 {
+          position: absolute;
+          top: 5%;
+          left: 22%;
+        }
+
+        .place-holder-02 {
+          width: 3rem;
+          height: 3rem;
+          position: absolute;
+          top: 0;
+          left: 60%;
+        }
+
+        .place-holder-03 {
+          width: 3rem;
+          height: 3rem;
+          position: absolute;
+          bottom: 40%;
+          right: 5%;
+        }
+
+        .place-holder-04 {
+          width: 3rem;
+          height: 3rem;
+          position: absolute;
+          bottom: 3%;
+          right: 40%;
+        }
+
+        .place-holder-05 {
+          position: absolute;
+          bottom: 15%;
+          left: 15%;
         }
       }
     }

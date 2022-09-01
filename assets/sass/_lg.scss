@@ -127,11 +127,97 @@
     margin: 0 auto;
     width: 80%;
 
-    h1 {
-      font-size: 2.2em;
+      .hero-row {
+      @include flexItem(row, space-between);
+      align-items: center;
 
-      img {
-        width: 4rem;
+      .intro {
+        width: 100%;
+
+        h1 {
+          font-size: 2.2em;
+        }
+
+        p {
+          margin-top: 2rem;
+        }
+
+        .row-btn {
+          @include flexItem(row, flex-start);
+          align-items: center;
+          margin-top: 2rem;
+          button {
+            padding: 0.7rem 1.4rem;
+
+            font-size: 0.85em;
+
+            &:last-child {
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
+
+      .eclipse {
+        width: 100%;
+        overflow: hidden;
+
+        .hero-animation {
+          overflow: hiddden;
+          animation: rotate 10s linear infinite;
+          position: relative;
+
+          background-image: url("@/assets/icons/eclipse.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 80%;
+          height: 22rem;
+          margin: 4rem auto;
+
+          img {
+            width: 3rem;
+            height: 3rem;
+
+            animation: anti-rotate 10s linear infinite;
+          }
+
+          .place-holder-01 {
+            position: absolute;
+            top: 5%;
+            left: 22%;
+          }
+
+          .place-holder-02 {
+            width: 2rem;
+            height: 2rem;
+            position: absolute;
+            top: 0;
+            left: 60%;
+          }
+
+          .place-holder-03 {
+            width: 2rem;
+            height: 2rem;
+            position: absolute;
+            bottom: 40%;
+            right: 5%;
+          }
+
+          .place-holder-04 {
+            width: 2rem;
+            height: 2rem;
+            position: absolute;
+            bottom: 3%;
+            right: 40%;
+          }
+
+          .place-holder-05 {
+            position: absolute;
+            bottom: 15%;
+            left: 15%;
+          }
+        }
       }
     }
   }

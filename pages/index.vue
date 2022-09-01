@@ -42,8 +42,8 @@
 
     <!-- Hero Section -->
     <header>
-      <div class="row align-items-center justify-content-between">
-        <div class="col-12 col-sm-6 col-lg-5">
+      <div class="hero-row">
+        <div class="intro">
           <h1>Hire freelancers to make things happen.</h1>
           <p>
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -51,20 +51,33 @@
             veniam consequat sunt nostrud amet.
           </p>
           <div class="row-btn">
-          <button>Find Job</button>
-          <button>Find Freelancer</button>
-        </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-5">
-          <div class="hero-animation">
-            <!-- <div class="outer-circle">
-              <div class="inner-circle">
-                <div class="circle"></div>
-              </div>
-            </div> -->
+            <button>Find Job</button>
+            <button>Find Freelancer</button>
           </div>
         </div>
-        
+        <div class="eclipse">
+          <div class="hero-animation">
+          
+
+            <img
+              src="@/assets/icons/web-dev.svg"
+              class="place-holder-01"
+              alt=""
+            />
+            <img
+              src="@/assets/icons/ui-ux.svg"
+              class="place-holder-02"
+              alt=""
+            />
+            <img
+              src="@/assets/icons/logo-branding.svg"
+              class="place-holder-03"
+              alt=""
+            />
+            <img src="@/assets/icons/ai-data-model.svg" class="place-holder-04" alt="">
+              <img src="@/assets/icons/content-writing.svg" class="place-holder-05" alt="">
+          </div>
+        </div>
       </div>
     </header>
 

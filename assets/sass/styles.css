@@ -167,21 +167,46 @@ nav .nav-item-container .menu-btn {
 }
 
 header {
-  padding: 7rem 0;
+  padding: 2.6rem 0;
   margin: 0 auto;
   width: 85%;
 }
 
-header h1 {
+header .hero-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .hero-row .intro {
+  width: 45%;
+}
+
+header .hero-row .intro h1 {
   font-size: 2.6em;
   font-weight: bolder;
 }
 
-header p {
+header .hero-row .intro p {
   margin-top: 2rem;
 }
 
-header .row-btn {
+header .hero-row .intro .row-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +228,7 @@ header .row-btn {
   margin-top: 2rem;
 }
 
-header .row-btn button {
+header .hero-row .intro .row-btn button {
   padding: 0.7rem 1.4rem;
   background-color: #4aae8c;
   color: #fff;
@@ -212,7 +237,7 @@ header .row-btn button {
   border: 0.1rem solid #4aae8c;
 }
 
-header .row-btn button:last-child {
+header .hero-row .intro .row-btn button:last-child {
   margin-left: 1rem;
   background-color: #fff;
   color: #0B0706;
@@ -220,38 +245,110 @@ header .row-btn button:last-child {
   font-weight: bold;
 }
 
-header .hero-animation {
-  padding: 4rem;
-  background-color: #8cdfb3;
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
-header .hero-animation .outer-circle {
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes anti-rotate {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes anti-rotate {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+header .hero-row .eclipse {
+  width: 50%;
+  overflow: hidden;
+}
+
+header .hero-row .eclipse .hero-animation {
+  overflow: hiddden;
+  -webkit-animation: rotate 10s linear infinite;
+          animation: rotate 10s linear infinite;
   position: relative;
-  width: 350px;
-  height: 350px;
-  background-color: #fff;
-  border: 0.5px solid #a6b7d4;
-  border-radius: 50%;
+  background-image: url("@/assets/icons/eclipse.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80%;
+  height: 22rem;
+  margin: 4rem auto;
 }
 
-header .hero-animation .outer-circle .inner-circle {
-  width: 250px;
-  height: 250px;
-  -webkit-transform: translate(20%, 20%);
-          transform: translate(20%, 20%);
-  background-color: #8cdfb3;
-  border: 0.5px solid #8cdfb3;
-  border-radius: 50%;
+header .hero-row .eclipse .hero-animation img {
+  width: 4rem;
+  height: 4rem;
+  -webkit-animation: anti-rotate 10s linear infinite;
+          animation: anti-rotate 10s linear infinite;
 }
 
-header .hero-animation .outer-circle .inner-circle .circle {
-  width: 150px;
-  height: 150px;
-  -webkit-transform: translate(34%, 33%);
-          transform: translate(34%, 33%);
-  background-color: #fff;
-  border: 0.5px solid #fff;
-  border-radius: 50%;
+header .hero-row .eclipse .hero-animation .place-holder-01 {
+  position: absolute;
+  top: 5%;
+  left: 22%;
+}
+
+header .hero-row .eclipse .hero-animation .place-holder-02 {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 0;
+  left: 60%;
+}
+
+header .hero-row .eclipse .hero-animation .place-holder-03 {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  bottom: 40%;
+  right: 5%;
+}
+
+header .hero-row .eclipse .hero-animation .place-holder-04 {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  bottom: 3%;
+  right: 40%;
+}
+
+header .hero-row .eclipse .hero-animation .place-holder-05 {
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
 }
 
 .popular-category {
@@ -1107,11 +1204,116 @@ header .hero-animation .outer-circle .inner-circle .circle {
     margin: 0 auto;
     width: 80%;
   }
-  header h1 {
+  header .hero-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .hero-row .intro {
+    width: 100%;
+  }
+  header .hero-row .intro h1 {
     font-size: 2.2em;
   }
-  header h1 img {
-    width: 4rem;
+  header .hero-row .intro p {
+    margin-top: 2rem;
+  }
+  header .hero-row .intro .row-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 2rem;
+  }
+  header .hero-row .intro .row-btn button {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.85em;
+  }
+  header .hero-row .intro .row-btn button:last-child {
+    margin-left: 1rem;
+  }
+  header .hero-row .eclipse {
+    width: 100%;
+    overflow: hidden;
+  }
+  header .hero-row .eclipse .hero-animation {
+    overflow: hiddden;
+    -webkit-animation: rotate 10s linear infinite;
+            animation: rotate 10s linear infinite;
+    position: relative;
+    background-image: url("@/assets/icons/eclipse.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80%;
+    height: 22rem;
+    margin: 4rem auto;
+  }
+  header .hero-row .eclipse .hero-animation img {
+    width: 3rem;
+    height: 3rem;
+    -webkit-animation: anti-rotate 10s linear infinite;
+            animation: anti-rotate 10s linear infinite;
+  }
+  header .hero-row .eclipse .hero-animation .place-holder-01 {
+    position: absolute;
+    top: 5%;
+    left: 22%;
+  }
+  header .hero-row .eclipse .hero-animation .place-holder-02 {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0;
+    left: 60%;
+  }
+  header .hero-row .eclipse .hero-animation .place-holder-03 {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 40%;
+    right: 5%;
+  }
+  header .hero-row .eclipse .hero-animation .place-holder-04 {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 3%;
+    right: 40%;
+  }
+  header .hero-row .eclipse .hero-animation .place-holder-05 {
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
   }
   .popular-category {
     padding: 5rem 0;
@@ -1369,15 +1571,120 @@ header .hero-animation .outer-circle .inner-circle .circle {
 
 @media screen and (max-width: 768px) {
   header {
-    padding: 4rem 0;
+    padding: 7rem 0 4rem 0;
     margin: 0 auto;
     width: 88%;
   }
-  header h1 {
+  header .hero-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .hero-row .intro {
+    width: 100%;
+  }
+  header .hero-row .intro h1 {
     font-size: 2.2em;
   }
-  header h1 img {
-    width: 3.5rem;
+  header .hero-row .intro p {
+    margin-top: 2rem;
+  }
+  header .hero-row .intro .row-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 2rem;
+  }
+  header .hero-row .intro .row-btn button {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.85em;
+  }
+  header .hero-row .intro .row-btn button:last-child {
+    margin-left: 1rem;
+  }
+  header .hero-row .eclipse {
+    width: 100%;
+    overflow: hidden;
+  }
+  header .hero-row .eclipse .hero-animation {
+    overflow: hiddden;
+    -webkit-animation: rotate 10s linear infinite;
+            animation: rotate 10s linear infinite;
+    position: relative;
+    background-image: url("@/assets/icons/eclipse.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80%;
+    height: 22rem;
+    margin: 4rem auto;
+  }
+  header .hero-row .eclipse .hero-animation img {
+    width: 3rem;
+    height: 3rem;
+    -webkit-animation: anti-rotate 10s linear infinite;
+            animation: anti-rotate 10s linear infinite;
+  }
+  header .hero-row .eclipse .hero-animation .place-holder-01 {
+    position: absolute;
+    top: 5%;
+    left: 22%;
+  }
+  header .hero-row .eclipse .hero-animation .place-holder-02 {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0;
+    left: 60%;
+  }
+  header .hero-row .eclipse .hero-animation .place-holder-03 {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 40%;
+    right: 5%;
+  }
+  header .hero-row .eclipse .hero-animation .place-holder-04 {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 3%;
+    right: 40%;
+  }
+  header .hero-row .eclipse .hero-animation .place-holder-05 {
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
   }
   .popular-category {
     padding: 4rem 0;
@@ -1576,20 +1883,40 @@ header .hero-animation .outer-circle .inner-circle .circle {
     display: none;
   }
   header {
-    padding: 7rem 0 3rem 0;
+    padding: 7rem 0 2rem 0;
     margin: 0 auto;
     width: 94%;
   }
-  header h1 {
-    font-size: 1.7em;
+  header .hero-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  header h1 img {
-    width: 2.7rem;
+  header .hero-row .intro {
+    width: 100%;
   }
-  header p {
+  header .hero-row .intro h1 {
+    font-size: 1.6em;
+  }
+  header .hero-row .intro p {
     margin-top: 2rem;
   }
-  header .row-btn {
+  header .hero-row .intro .row-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1610,50 +1937,66 @@ header .hero-animation .outer-circle .inner-circle .circle {
             align-items: center;
     margin-top: 2rem;
   }
-  header .row-btn button {
+  header .hero-row .intro .row-btn button {
     padding: 0.7rem 1.4rem;
-    background-color: #4aae8c;
-    color: #fff;
-    border-radius: 0.4rem;
     font-size: 0.85em;
-    border: 0.1rem solid #4aae8c;
   }
-  header .row-btn button:last-child {
+  header .hero-row .intro .row-btn button:last-child {
     margin-left: 1rem;
-    background-color: #fff;
-    color: #0B0706;
-    border: 0.1rem solid #505780;
-    font-weight: bold;
   }
-  header .hero-animation {
-    margin-top: 2rem;
-    padding: 4rem;
+  header .hero-row .eclipse {
+    width: 100%;
+    overflow: hidden;
   }
-  header .hero-animation .outer-circle {
+  header .hero-row .eclipse .hero-animation {
+    overflow: hiddden;
+    -webkit-animation: rotate 10s linear infinite;
+            animation: rotate 10s linear infinite;
     position: relative;
-    width: 250px;
-    height: 250px;
-    background-color: #fff;
-    border: 0.5px solid #a6b7d4;
-    border-radius: 50%;
+    background-image: url("@/assets/icons/eclipse.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80%;
+    height: 22rem;
+    margin: 3rem auto;
   }
-  header .hero-animation .outer-circle .inner-circle {
-    width: 150px;
-    height: 150px;
-    -webkit-transform: translate(20%, 20%);
-            transform: translate(20%, 20%);
-    background-color: #8cdfb3;
-    border: 0.5px solid #8cdfb3;
-    border-radius: 50%;
+  header .hero-row .eclipse .hero-animation img {
+    width: 3rem;
+    height: 3rem;
+    -webkit-animation: anti-rotate 10s linear infinite;
+            animation: anti-rotate 10s linear infinite;
   }
-  header .hero-animation .outer-circle .inner-circle .circle {
-    width: 100px;
-    height: 100px;
-    -webkit-transform: translate(34%, 33%);
-            transform: translate(34%, 33%);
-    background-color: #fff;
-    border: 0.5px solid #fff;
-    border-radius: 50%;
+  header .hero-row .eclipse .hero-animation .place-holder-01 {
+    position: absolute;
+    top: 5%;
+    left: 22%;
+  }
+  header .hero-row .eclipse .hero-animation .place-holder-02 {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0;
+    left: 60%;
+  }
+  header .hero-row .eclipse .hero-animation .place-holder-03 {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 40%;
+    right: 5%;
+  }
+  header .hero-row .eclipse .hero-animation .place-holder-04 {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 3%;
+    right: 40%;
+  }
+  header .hero-row .eclipse .hero-animation .place-holder-05 {
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
   }
   .popular-category {
     padding: 3rem 0;

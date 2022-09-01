@@ -18,73 +18,99 @@
   }
 
   header {
-    padding: 7rem 0 3rem 0;
+    padding: 7rem 0 2rem 0;
     margin: 0 auto;
     width: 94%;
 
-    h1 {
-      font-size: 1.7em;
-
-      img {
-        width: 2.7rem;
-      }
-    }
-
-    p {
-      margin-top: 2rem;
-    }
-
-    .row-btn {
-      @include flexItem(row, flex-start);
+    .hero-row {
+      @include flexItem(row, space-between);
       align-items: center;
-      margin-top: 2rem;
-      button {
-        padding: 0.7rem 1.4rem;
-        background-color: #4aae8c;
-        color: $white;
-        border-radius: 0.4rem;
-        font-size: 0.85em;
 
-        border: 0.1rem solid #4aae8c;
+      .intro {
+        width: 100%;
 
-        &:last-child {
-          margin-left: 1rem;
-          background-color: $white;
-          color: $black;
-          border: 0.1rem solid #505780;
-          font-weight: bold;
+        h1 {
+          font-size: 1.6em;
+        }
+
+        p {
+          margin-top: 2rem;
+        }
+
+        .row-btn {
+          @include flexItem(row, flex-start);
+          align-items: center;
+          margin-top: 2rem;
+          button {
+            padding: 0.7rem 1.4rem;
+
+            font-size: 0.85em;
+
+            &:last-child {
+              margin-left: 1rem;
+            }
+          }
         }
       }
-    }
 
-    .hero-animation {
-      margin-top: 2rem;
-      padding: 4rem;
-     
+      .eclipse {
+        width: 100%;
+        overflow: hidden;
 
-      .outer-circle {
-        position: relative;
-        width: 250px;
-        height: 250px;
-        background-color: $white;
-        border: 0.5px solid #a6b7d4;
-        border-radius: 50%;
+        .hero-animation {
+          overflow: hiddden;
+          animation: rotate 10s linear infinite;
+          position: relative;
 
-        .inner-circle {
-          width: 150px;
-          height: 150px;
-          transform: translate(20%, 20%);
-          background-color: rgba(140, 223, 179, 1);
-          border: 0.5px solid rgba(140, 223, 179, 1);
-          border-radius: 50%;
+          background-image: url("@/assets/icons/eclipse.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 80%;
+          height: 22rem;
+          margin: 3rem auto;
 
-          .circle {
-            width: 100px;
-            height: 100px;
-            transform: translate(34%, 33%);
-            background-color: $white;
-            border: 0.5px solid $white;
-            border-radius: 50%;
+          img {
+            width: 3rem;
+            height: 3rem;
+
+            animation: anti-rotate 10s linear infinite;
+          }
+
+          .place-holder-01 {
+            position: absolute;
+            top: 5%;
+            left: 22%;
+          }
+
+          .place-holder-02 {
+            width: 2rem;
+            height: 2rem;
+            position: absolute;
+            top: 0;
+            left: 60%;
+          }
+
+          .place-holder-03 {
+            width: 2rem;
+            height: 2rem;
+            position: absolute;
+            bottom: 40%;
+            right: 5%;
+          }
+
+          .place-holder-04 {
+            width: 2rem;
+            height: 2rem;
+            position: absolute;
+            bottom: 3%;
+            right: 40%;
+          }
+
+          .place-holder-05 {
+            position: absolute;
+            bottom: 15%;
+            left: 15%;
           }
         }
       }
