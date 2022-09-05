@@ -1982,10 +1982,10 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2000,10 +2000,12 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
   }
   header .hero-row .intro h1 {
     font-size: 1.6em;
+    text-align: center;
   }
   header .hero-row .intro p {
     margin-top: 2rem;
     font-size: 1em;
+    text-align: center;
   }
   header .hero-row .intro .row-btn {
     display: -webkit-box;
@@ -2016,9 +2018,9 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-align: center;
@@ -2048,7 +2050,7 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     background-size: contain;
     width: 80%;
     height: 22rem;
-    margin: 3rem auto;
+    margin: 0rem auto 3rem auto;
   }
   header .hero-row .eclipse .hero-animation img {
     width: 3rem;

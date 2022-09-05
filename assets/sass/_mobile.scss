@@ -23,7 +23,7 @@
     width: 94%;
 
     .hero-row {
-      @include flexItem(row, space-between);
+      @include flexItem(column-reverse, space-between);
       align-items: center;
 
       .intro {
@@ -31,15 +31,19 @@
 
         h1 {
           font-size: 1.6em;
+          text-align: center;
         }
 
         p {
           margin-top: 2rem;
           font-size: 1em;
+          text-align: center;
         }
 
         .row-btn {
-          @include flexItem(row, flex-start);
+          // @include flexItem(row, flex-start);
+
+          @include flexItem(row, center);
           align-items: center;
           margin-top: 2rem;
           button {
@@ -69,7 +73,8 @@
           background-size: contain;
           width: 80%;
           height: 22rem;
-          margin: 3rem auto;
+          // margin: 2rem auto;
+          margin: 0rem auto 3rem auto;
 
           img {
             width: 3rem;
