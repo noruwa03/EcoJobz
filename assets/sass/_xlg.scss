@@ -1,4 +1,46 @@
 @media screen and (max-width: 1200px) {
+  .bg-container {
+    width: 87%;
+    height: 100vh;
+    margin: 0 auto;
+
+    .bg {
+      background-image: url("@/assets/images/bg.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      h1 {
+        position: absolute;
+        top: 22%;
+        left: 5%;
+        width: 66%;
+      }
+
+      .job-search {
+        @include flexItem(row, space-between);
+        padding: 0 2rem;
+
+        position: absolute;
+        bottom: 22%;
+        left: 0;
+
+        .job-card {
+          width: 32%;
+          padding: 1rem;
+          background-color: #1a1a1a;
+          border-radius: 12px;
+
+          p {
+            margin: 1.5rem 0;
+          }
+        }
+      }
+    }
+  }
   .login-page {
     .form {
       width: 50%;

@@ -151,6 +151,68 @@
 
     <!-- End of Popular Category -->
 
+    <!-- Background-Image -->
+    <div class="bg-container">
+      <div class="bg">
+        <h1>Get the right people to grow with on Ecojobz easily</h1>
+
+        <div class="job-search">
+          <div class="job-card">
+            <h3>Job search</h3>
+            <p>
+              Ask for personalized tips on resumes, interviews and best
+              practices in the tech space
+            </p>
+            <button>Get Started</button>
+          </div>
+          <div class="job-card">
+            <h3>Job search</h3>
+            <p>
+              Ask for personalized tips on resumes, interviews and best
+              practices in the tech space
+            </p>
+            <button>Get Started</button>
+          </div>
+          <div class="job-card">
+            <h3>Job search</h3>
+            <p>
+              Ask for personalized tips on resumes, interviews and best
+              practices in the tech space
+            </p>
+            <button>Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Background-Image -->
+
+    <!-- Side by Side Image -->
+    <div class="image-container">
+      <div class="image-container-one">
+        <div class="text-content">
+          <h3>Vetted and Verified</h3>
+          <p>
+            Schedule a session instantly with a mentor and work with them -
+            whether it's for one-off tactical advice or multiple sessions
+            towards a long-term goal.
+          </p>
+        </div>
+      </div>
+      <div class="image-container-two">
+        <div class="text-content">
+          <h3>Vetted and Verified</h3>
+          <p>
+            Schedule a session instantly with a mentor and work with them -
+            whether it's for one-off tactical advice or multiple sessions
+            towards a long-term goal.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Side by Side Image -->
+
     <!-- How-We-Work -->
     <div class="how-we-work">
       <div class="text-center"><h1>How We Work</h1></div>
