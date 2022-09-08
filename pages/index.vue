@@ -689,9 +689,7 @@
               <NuxtLink class="footer-link" to="" target="_blank">
                 Contact
               </NuxtLink>
-              <NuxtLink class="footer-link" to="" target="_blank">
-                Privacy Policy
-              </NuxtLink>
+             
             </div>
             <div class="col-6 col-sm-4 col-lg-2">
               <h4>Product</h4>
@@ -701,15 +699,8 @@
               <NuxtLink class="footer-link" to="/" target="_blank">
                 Customers
               </NuxtLink>
-              <NuxtLink class="footer-link" to="" target="_blank">
-                Screen Recorder
-              </NuxtLink>
-              <NuxtLink class="footer-link" to="" target="_blank">
-                Loom for Enterprise
-              </NuxtLink>
-              <NuxtLink class="footer-link" to="" target="_blank">
-                Webcam
-              </NuxtLink>
+             
+              
             </div>
             <div class="col-6 col-sm-4 col-lg-2">
               <h4>Resources</h4>
@@ -719,24 +710,14 @@
               <NuxtLink class="footer-link" to="/" target="_blank">
                 Attendance
               </NuxtLink>
-              <NuxtLink class="footer-link" to="" target="_blank">
-                Certificates
-              </NuxtLink>
-              <NuxtLink class="footer-link" to="" target="_blank">
-                Certificates Verify
-              </NuxtLink>
+              
             </div>
             <div class="col-6 col-sm-4 col-lg-2">
               <h4>Help & Information</h4>
               <NuxtLink class="footer-link" to="" target="_blank">
                 Help
               </NuxtLink>
-              <NuxtLink class="footer-link" to="/" target="_blank">
-                Track Order
-              </NuxtLink>
-              <NuxtLink class="footer-link" to="" target="_blank">
-                Delivery and Returns
-              </NuxtLink>
+             
             </div>
           </div>
           <div class="social-media">
