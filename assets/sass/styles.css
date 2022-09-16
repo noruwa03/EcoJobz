@@ -197,7 +197,7 @@ header .hero-row .intro {
 }
 
 header .hero-row .intro h1 {
-  font-size: 2.7em;
+  font-size: 2.5em;
   font-weight: bolder;
 }
 
@@ -855,39 +855,42 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
 
 .register-section .register-bg .row-item h2 {
   color: #fff;
-  width: 33%;
+  width: 38%;
 }
 
 .register-section .register-bg .row-item .input-box {
   width: 45%;
 }
 
-.register-section .register-bg .row-item .input-box input {
-  background: #fff;
-  padding: 1.2rem 1.1rem;
+.register-section .register-bg .row-item .input-box .custom-search {
+  position: relative;
   width: 100%;
+}
+
+.register-section .register-bg .row-item .input-box .custom-search-input {
+  width: 100%;
+  border-radius: 100px;
+  padding: 1.2rem 8.1rem 1.2rem 1.1rem;
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
   border: none;
-  border-radius: 2rem;
 }
 
-.register-section .register-bg .row-item .input-box input::-webkit-input-placeholder {
-  color: #7a828a;
-  font-size: 0.88em;
-}
-
-.register-section .register-bg .row-item .input-box input:-ms-input-placeholder {
-  color: #7a828a;
-  font-size: 0.88em;
-}
-
-.register-section .register-bg .row-item .input-box input::-ms-input-placeholder {
-  color: #7a828a;
-  font-size: 0.88em;
-}
-
-.register-section .register-bg .row-item .input-box input::placeholder {
-  color: #7a828a;
-  font-size: 0.88em;
+.register-section .register-bg .row-item .input-box .custom-search-botton {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  bottom: 3px;
+  border: 0;
+  background: #0B0706;
+  color: #fff;
+  outline: none;
+  margin: 0;
+  padding: 0 1.6rem;
+  border-radius: 100px;
+  z-index: 2;
 }
 
 .subscribe {
@@ -1293,6 +1296,7 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
       -ms-flex-align: center;
           align-items: center;
   margin: 1rem 0;
+  width: 100%;
 }
 
 .footer-bg footer .newsletter-subscribe .input-box input {
@@ -1302,10 +1306,10 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
 }
 
 .footer-bg footer .newsletter-subscribe .input-box button {
-  padding: 0.3rem 1rem;
+  padding: 0.3rem 0;
   border: none;
   width: 15%;
-  background-color: #4AAE8C;
+  background-color: #4aae8c;
 }
 
 .footer-bg footer .footer-link {
@@ -1941,23 +1945,6 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     margin: 1.7rem auto;
     width: 50%;
   }
-  .register-section .register-bg .row-item .input-box input {
-    width: 100%;
-    border: none;
-    border-radius: 2rem;
-  }
-  .register-section .register-bg .row-item .input-box input::-webkit-input-placeholder {
-    font-size: 0.88em;
-  }
-  .register-section .register-bg .row-item .input-box input:-ms-input-placeholder {
-    font-size: 0.88em;
-  }
-  .register-section .register-bg .row-item .input-box input::-ms-input-placeholder {
-    font-size: 0.88em;
-  }
-  .register-section .register-bg .row-item .input-box input::placeholder {
-    font-size: 0.88em;
-  }
   .subscribe {
     padding: 5rem 0;
   }
@@ -2111,7 +2098,7 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     width: 85%;
   }
   .footer-bg footer .newsletter-subscribe .input-box button {
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 0;
     border: none;
     width: 15%;
   }
@@ -2475,23 +2462,6 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     margin: 1.7rem auto;
     width: 100%;
   }
-  .register-section .register-bg .row-item .input-box input {
-    width: 100%;
-    border: none;
-    border-radius: 2rem;
-  }
-  .register-section .register-bg .row-item .input-box input::-webkit-input-placeholder {
-    font-size: 0.88em;
-  }
-  .register-section .register-bg .row-item .input-box input:-ms-input-placeholder {
-    font-size: 0.88em;
-  }
-  .register-section .register-bg .row-item .input-box input::-ms-input-placeholder {
-    font-size: 0.88em;
-  }
-  .register-section .register-bg .row-item .input-box input::placeholder {
-    font-size: 0.88em;
-  }
   .subscribe {
     padding: 3rem 0;
   }
@@ -2568,7 +2538,7 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     width: 85%;
   }
   .footer-bg footer .newsletter-subscribe .input-box button {
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 0;
     border: none;
     width: 15%;
   }
@@ -2692,6 +2662,9 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
   header .hero-row .intro p {
     margin-top: 2rem;
     font-size: 1em;
+    text-align: center;
+  }
+  header .hero-row .intro .intro-btn {
     text-align: center;
   }
   header .hero-row .eclipse {
@@ -2988,23 +2961,6 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     margin: 1rem auto;
     width: 100%;
   }
-  .register-section .register-bg .row-item .input-box input {
-    width: 100%;
-    border: none;
-    border-radius: 2rem;
-  }
-  .register-section .register-bg .row-item .input-box input::-webkit-input-placeholder {
-    font-size: 0.88em;
-  }
-  .register-section .register-bg .row-item .input-box input:-ms-input-placeholder {
-    font-size: 0.88em;
-  }
-  .register-section .register-bg .row-item .input-box input::-ms-input-placeholder {
-    font-size: 0.88em;
-  }
-  .register-section .register-bg .row-item .input-box input::placeholder {
-    font-size: 0.88em;
-  }
   .subscribe {
     padding: 3rem 0;
   }
@@ -3151,7 +3107,7 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     width: 85%;
   }
   .footer-bg footer .newsletter-subscribe .input-box button {
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 0;
     border: none;
     width: 15%;
   }

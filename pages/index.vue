@@ -46,13 +46,17 @@
         <div class="intro">
           <h1>Hire the perfect freelancers to turn your ideas into reality</h1>
           <p>
-            Ecojobz is a highly vetted network of developers, designers, technical writers, content strategists and content managers across Africa.
+            Ecojobz is a highly vetted network of developers, designers,
+            technical writers, content strategists and content managers across
+            Africa.
           </p>
           <!-- <div class="row-btn">
             <button>Find Job</button>
             <button>Find Freelancer</button>
           </div> -->
-          <button>Hire a talented freelancer</button>
+          <div class="intro-btn">
+            <button>Hire a talented freelancer</button>
+          </div>
         </div>
         <div class="eclipse">
           <div class="hero-animation">
@@ -149,8 +153,6 @@
     </div> -->
 
     <!-- End of Popular Category -->
-
-   
 
     <!-- Side by Side Image -->
     <div class="image-container">
@@ -555,13 +557,14 @@
 
     <!-- End of Get Started -->
 
-
-     <!-- Background-Image -->
+    <!-- Background-Image -->
     <div class="bg-container">
       <div class="bg">
-        <h2>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h2>
-
-       
+        <h2>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </h2>
       </div>
     </div>
 
@@ -622,7 +625,16 @@
         <div class="row-item">
           <h2>Register and get started for free</h2>
           <div class="input-box">
-            <input type="text" placeholder="Your email address..." />
+            <div class="custom-search">
+              <input
+                type="text"
+                class="custom-search-input"
+                placeholder="Your email address..."
+              />
+              <button class="custom-search-botton" type="submit">
+                Subscribe
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -721,9 +733,7 @@
             <NuxtLink to="/" target="_blank"> Cookies </NuxtLink>
           </div>
           <div class="end">
-            
             <NuxtLink
-            
               to="https://instagram.com/ecolabz"
               target="_blank"
               rel="noopener"
@@ -732,7 +742,6 @@
             </NuxtLink>
 
             <NuxtLink
-           
               to="https://instagram.com/ecolabz"
               target="_blank"
               rel="noopener"
@@ -741,7 +750,6 @@
             </NuxtLink>
 
             <NuxtLink
-         
               to="https://instagram.com/ecolabz"
               target="_blank"
               rel="noopener"

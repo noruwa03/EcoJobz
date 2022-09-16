@@ -127,7 +127,7 @@ header {
       width: 45%;
 
       h1 {
-        font-size: 2.7em;
+        font-size: 2.5em;
         font-weight: bolder;
       }
 
@@ -621,23 +621,40 @@ header {
 
       h2 {
         color: $white;
-        width: 33%;
+        width: 38%;
       }
 
       .input-box {
         width: 45%;
-        input {
-          background: $white;
 
-          padding: 1.2rem 1.1rem;
+        .custom-search {
+          position: relative;
           width: 100%;
-          border: none;
-          border-radius: 2rem;
+        }
+        .custom-search-input {
+          width: 100%;
 
-          &::placeholder {
-            color: #7a828a;
-            font-size: 0.88em;
-          }
+          border-radius: 100px;
+
+          padding: 1.2rem 8.1rem 1.2rem 1.1rem;
+          line-height: 1;
+          box-sizing: border-box;
+          outline: none;
+          border: none;
+        }
+        .custom-search-botton {
+          position: absolute;
+          right: 3px;
+          top: 3px;
+          bottom: 3px;
+          border: 0;
+          background: $black;
+          color: #fff;
+          outline: none;
+          margin: 0;
+          padding: 0 1.6rem;
+          border-radius: 100px;
+          z-index: 2;
         }
       }
     }
@@ -860,23 +877,24 @@ header {
       transform: translateY(-2rem);
 
       .input-box {
-          @include flexItem(row, flex-start);
-          align-items: center;
-          margin: 1rem 0;
+        @include flexItem(row, flex-start);
+        align-items: center;
+        margin: 1rem 0;
+        width: 100%;
 
-          input {
-            padding: 0.3rem 0.5rem;
-            border: none;
-            width: 85%;
-          }
-
-          button {
-            padding: 0.3rem 1rem;
-            border: none;
-            width: 15%;
-            background-color: #4AAE8C;
-          }
+        input {
+          padding: 0.3rem 0.5rem;
+          border: none;
+          width: 85%;
         }
+
+        button {
+          padding: 0.3rem 0;
+          border: none;
+          width: 15%;
+          background-color: #4aae8c;
+        }
+      }
     }
 
     .footer-link {

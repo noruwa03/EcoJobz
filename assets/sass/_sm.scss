@@ -345,15 +345,7 @@
         .input-box {
           margin: 1.7rem auto;
           width: 100%;
-          input {
-            width: 100%;
-            border: none;
-            border-radius: 2rem;
-
-            &::placeholder {
-              font-size: 0.88em;
-            }
-          }
+          
         }
       }
     }
@@ -423,7 +415,7 @@
           }
 
           button {
-            padding: 0.3rem 1rem;
+             padding: 0.3rem 0;
             border: none;
             width: 15%;
           }
