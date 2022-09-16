@@ -197,52 +197,23 @@ header .hero-row .intro {
 }
 
 header .hero-row .intro h1 {
-  font-size: 2.6em;
+  font-size: 2.7em;
   font-weight: bolder;
 }
 
 header .hero-row .intro p {
-  margin-top: 2rem;
+  margin: 2rem auto;
   font-size: 1.1em;
+  color: #676464;
 }
 
-header .hero-row .intro .row-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 2rem;
-}
-
-header .hero-row .intro .row-btn button {
-  padding: 0.7rem 1.4rem;
+header .hero-row .intro button {
+  padding: 0.8rem 1.5rem;
   background-color: #4aae8c;
   color: #fff;
   border-radius: 0.4rem;
-  font-size: 0.85em;
-  border: 0.1rem solid #4aae8c;
-}
-
-header .hero-row .intro .row-btn button:last-child {
-  margin-left: 1rem;
-  background-color: #fff;
-  color: #0B0706;
-  border: 0.1rem solid #505780;
-  font-weight: bold;
+  font-size: 0.9em;
+  border: none;
 }
 
 @-webkit-keyframes rotate {
@@ -389,64 +360,20 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
   position: relative;
 }
 
-.bg-container .bg h1 {
+.bg-container .bg h2 {
   position: absolute;
-  top: 25%;
-  left: 5%;
+  top: 50%;
+  left: 7%;
   width: 45%;
   color: #fff;
-}
-
-.bg-container .bg .job-search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 0 4rem;
-  position: absolute;
-  bottom: 23%;
-  left: 0;
-}
-
-.bg-container .bg .job-search .job-card {
-  width: 30%;
-  padding: 1rem;
-  background-color: #1a1a1a;
-  border-radius: 12px;
-}
-
-.bg-container .bg .job-search .job-card h3,
-.bg-container .bg .job-search .job-card p {
-  color: #fff;
-}
-
-.bg-container .bg .job-search .job-card p {
-  margin: 1.5rem 0;
-}
-
-.bg-container .bg .job-search .job-card button {
-  padding: 0.7rem 1.4rem;
-  background-color: #dee6dd;
-  color: #1a1a1a;
-  border-radius: 0.4rem;
-  font-size: 0.85em;
-  border: none;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
 }
 
 .image-container {
   width: 87%;
   margin: 0 auto;
+  padding: 5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,11 +391,13 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
       flex-wrap: wrap;
 }
 
-.image-container .image-container-one, .image-container .image-container-two {
+.image-container .image-container-one,
+.image-container .image-container-two {
   position: relative;
 }
 
-.image-container .image-container-one .text-content, .image-container .image-container-two .text-content {
+.image-container .image-container-one .text-content,
+.image-container .image-container-two .text-content {
   position: absolute;
   left: 0;
   bottom: 10%;
@@ -497,7 +426,7 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
 }
 
 .how-we-work {
-  padding: 7rem 0;
+  padding: 5rem 0;
 }
 
 .how-we-work h1 {
@@ -704,8 +633,7 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
 }
 
 .get-started {
-  padding: 5rem 0;
-  background-color: #f7fafc;
+  padding: 7rem 0;
 }
 
 .get-started h1 {
@@ -866,6 +794,100 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
 .connect-talent .connect-row .cards .talent-card p {
   margin-top: 1rem;
   font-size: 1.06em;
+}
+
+.register-section {
+  padding: 5rem 0;
+  width: 87%;
+  margin: 0 auto;
+}
+
+.register-section .register-bg {
+  background-image: url("@/assets/icons/reg-get-started.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 15rem;
+  border-radius: 0.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register-section .register-bg .row-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.register-section .register-bg .row-item h2 {
+  color: #fff;
+  width: 33%;
+}
+
+.register-section .register-bg .row-item .input-box {
+  width: 45%;
+}
+
+.register-section .register-bg .row-item .input-box input {
+  background: #fff;
+  padding: 1.2rem 1.1rem;
+  width: 100%;
+  border: none;
+  border-radius: 2rem;
+}
+
+.register-section .register-bg .row-item .input-box input::-webkit-input-placeholder {
+  color: #7a828a;
+  font-size: 0.88em;
+}
+
+.register-section .register-bg .row-item .input-box input:-ms-input-placeholder {
+  color: #7a828a;
+  font-size: 0.88em;
+}
+
+.register-section .register-bg .row-item .input-box input::-ms-input-placeholder {
+  color: #7a828a;
+  font-size: 0.88em;
+}
+
+.register-section .register-bg .row-item .input-box input::placeholder {
+  color: #7a828a;
+  font-size: 0.88em;
 }
 
 .subscribe {
@@ -1232,86 +1254,160 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
 
 .footer-bg {
   padding: 4rem 0;
-  background-color: #0B0706;
+  border-top: 0.1rem solid #757575;
 }
 
-.footer-bg footer .description {
-  margin-top: 1rem;
-  color: #e5e5e5;
-  font-size: 0.9em;
+.footer-bg footer {
+  padding: 5rem 0 0rem 0;
+  border-bottom: 3px solid #efefef;
 }
 
 .footer-bg footer h4 {
-  font-size: 1.07em;
-  color: #fff;
+  margin-top: 2rem;
+}
+
+.footer-bg footer .newsletter-subscribe {
+  background-color: #e9fff8;
+  padding: 2rem;
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
+}
+
+.footer-bg footer .newsletter-subscribe .input-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+.footer-bg footer .newsletter-subscribe .input-box input {
+  padding: 0.3rem 0.5rem;
+  border: none;
+  width: 85%;
+}
+
+.footer-bg footer .newsletter-subscribe .input-box button {
+  padding: 0.3rem 1rem;
+  border: none;
+  width: 15%;
+  background-color: #4AAE8C;
 }
 
 .footer-bg footer .footer-link {
   display: block;
   margin: 0.7rem 0;
-  font-size: 0.9em;
-  color: #e5e5e5;
+  color: #757575;
   text-decoration: none;
 }
 
-.footer-bg footer .social-media {
-  margin-top: 2rem;
+.footer-bg .social-media {
+  margin-top: 3.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.footer-bg footer .social-media img {
-  width: 1.5rem;
+.footer-bg .social-media .start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-bg .social-media .start a {
+  margin-right: 2rem;
+  color: #676464;
+  text-decoration: none;
+}
+
+.footer-bg .social-media .end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-bg .social-media .end a {
+  margin: 0 0.8rem;
 }
 
 @media screen and (max-width: 1200px) {
   .bg-container {
-    width: 87%;
-    height: 100vh;
+    width: 94%;
+    height: 33rem;
     margin: 0 auto;
+    padding: 2rem 0;
   }
   .bg-container .bg {
     background-image: url("@/assets/images/bg.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
     position: relative;
   }
-  .bg-container .bg h1 {
+  .bg-container .bg h2 {
     position: absolute;
-    top: 22%;
-    left: 5%;
-    width: 66%;
-  }
-  .bg-container .bg .job-search {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 0 2rem;
-    position: absolute;
-    bottom: 22%;
-    left: 0;
-  }
-  .bg-container .bg .job-search .job-card {
-    width: 32%;
-    padding: 1rem;
-    background-color: #1a1a1a;
-    border-radius: 12px;
-  }
-  .bg-container .bg .job-search .job-card p {
-    margin: 1.5rem 0;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+    font-size: 1.9em;
+    padding: 0 2.4rem;
   }
   .login-page .form {
     width: 50%;
@@ -1611,56 +1707,6 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
   .popular-category {
     padding: 5rem 0;
   }
-  .bg-container {
-    width: 100%;
-    height: 50rem;
-    margin: 0 auto;
-  }
-  .bg-container .bg {
-    background-image: url("@/assets/images/bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  .bg-container .bg h1 {
-    position: absolute;
-    top: 10%;
-    left: 0%;
-    width: 65%;
-    padding: 0 2rem;
-  }
-  .bg-container .bg .job-search {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 0 1rem;
-    position: absolute;
-    bottom: 6%;
-    left: 0;
-  }
-  .bg-container .bg .job-search .job-card {
-    width: 45%;
-    padding: 1rem;
-    border-radius: 12px;
-    margin: 1rem 0;
-  }
-  .bg-container .bg .job-search .job-card p {
-    margin: 1.5rem 0;
-  }
   .image-container {
     width: 97%;
     margin: 2rem auto;
@@ -1783,6 +1829,31 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     font-size: 2.2em;
     margin-bottom: 1.5rem;
   }
+  .bg-container {
+    width: 94%;
+    height: 27rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  .bg-container .bg {
+    background-image: url("@/assets/images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .bg-container .bg h2 {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+    font-size: 1.34em;
+    padding: 0 2rem;
+  }
   .connect-talent {
     padding: 3rem 0;
     margin: 0 auto;
@@ -1807,6 +1878,85 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
   }
   .connect-talent .connect-row .cards .talent-card p {
     font-size: 1em;
+  }
+  .register-section {
+    padding: 3rem 0;
+    width: 94%;
+    margin: 0 auto;
+  }
+  .register-section .register-bg {
+    background-image: url("@/assets/icons/reg-get-started.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 15rem;
+    border-radius: 0.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .register-section .register-bg .row-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .register-section .register-bg .row-item h2 {
+    width: 40%;
+    font-size: 1.8em;
+  }
+  .register-section .register-bg .row-item .input-box {
+    margin: 1.7rem auto;
+    width: 50%;
+  }
+  .register-section .register-bg .row-item .input-box input {
+    width: 100%;
+    border: none;
+    border-radius: 2rem;
+  }
+  .register-section .register-bg .row-item .input-box input::-webkit-input-placeholder {
+    font-size: 0.88em;
+  }
+  .register-section .register-bg .row-item .input-box input:-ms-input-placeholder {
+    font-size: 0.88em;
+  }
+  .register-section .register-bg .row-item .input-box input::-ms-input-placeholder {
+    font-size: 0.88em;
+  }
+  .register-section .register-bg .row-item .input-box input::placeholder {
+    font-size: 0.88em;
   }
   .subscribe {
     padding: 5rem 0;
@@ -1923,25 +2073,52 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
   .login-page .image {
     display: none;
   }
-  footer .description {
-    margin-top: 1rem;
-    margin-bottom: 1.4rem;
-    font-size: 0.85em;
+  .footer-bg footer {
+    padding: 1rem 0 3rem 0;
   }
-  footer h4 {
-    font-size: 1.1em;
-    margin-top: 2rem;
+  .footer-bg footer .newsletter-subscribe {
+    margin-top: 2.6rem;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
   }
-  footer .footer-link {
+  .footer-bg footer .newsletter-subscribe h4 {
+    font-size: 1.3em;
+  }
+  .footer-bg footer .newsletter-subscribe .input-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem 0;
+  }
+  .footer-bg footer .newsletter-subscribe .input-box input {
+    padding: 0.3rem 0.5rem;
+    border: none;
+    width: 85%;
+  }
+  .footer-bg footer .newsletter-subscribe .input-box button {
+    padding: 0.3rem 1rem;
+    border: none;
+    width: 15%;
+  }
+  .footer-bg footer .footer-link {
     display: block;
     margin: 0.7rem 0;
-    font-size: 0.85em;
-  }
-  footer .social-media {
-    margin-top: 2rem;
-  }
-  footer .social-media img {
-    width: 1.5rem;
+    text-decoration: none;
   }
 }
 
@@ -2073,63 +2250,10 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
   .popular-category .popular-card h3 {
     font-size: 1.3em;
   }
-  .bg-container {
-    width: 100%;
-    height: 65rem;
-    margin: 0 auto;
-  }
-  .bg-container .bg {
-    background-image: url("@/assets/images/bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  .bg-container .bg h1 {
-    position: absolute;
-    top: 10%;
-    left: 0%;
-    width: 100%;
-    padding: 0 1rem;
-  }
-  .bg-container .bg .job-search {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0 1rem;
-    position: absolute;
-    bottom: 6%;
-    left: 0;
-  }
-  .bg-container .bg .job-search .job-card {
-    width: 80%;
-    padding: 1rem;
-    border-radius: 12px;
-    margin: 1rem 0;
-  }
-  .bg-container .bg .job-search .job-card p {
-    margin: 1.5rem 0;
-  }
   .image-container {
-    width: 100%;
+    width: 94%;
     margin: 2rem auto;
+    padding: 3rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2239,6 +2363,31 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     font-size: 1.6em;
     margin-bottom: 1.5rem;
   }
+  .bg-container {
+    width: 94%;
+    height: 27rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  .bg-container .bg {
+    background-image: url("@/assets/images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .bg-container .bg h2 {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+    font-size: 1.23em;
+    padding: 0 1rem;
+  }
   .connect-talent {
     padding: 3rem 0;
     margin: 0 auto;
@@ -2263,6 +2412,85 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
   }
   .connect-talent .connect-row .cards .talent-card p {
     font-size: 1em;
+  }
+  .register-section {
+    padding: 3rem 0;
+    width: 94%;
+    margin: 0 auto;
+  }
+  .register-section .register-bg {
+    background-image: url("@/assets/icons/reg-get-started.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 15rem;
+    border-radius: 0.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .register-section .register-bg .row-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .register-section .register-bg .row-item h2 {
+    width: 100%;
+    font-size: 1.8em;
+  }
+  .register-section .register-bg .row-item .input-box {
+    margin: 1.7rem auto;
+    width: 100%;
+  }
+  .register-section .register-bg .row-item .input-box input {
+    width: 100%;
+    border: none;
+    border-radius: 2rem;
+  }
+  .register-section .register-bg .row-item .input-box input::-webkit-input-placeholder {
+    font-size: 0.88em;
+  }
+  .register-section .register-bg .row-item .input-box input:-ms-input-placeholder {
+    font-size: 0.88em;
+  }
+  .register-section .register-bg .row-item .input-box input::-ms-input-placeholder {
+    font-size: 0.88em;
+  }
+  .register-section .register-bg .row-item .input-box input::placeholder {
+    font-size: 0.88em;
   }
   .subscribe {
     padding: 3rem 0;
@@ -2299,25 +2527,119 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     font-size: 0.83em;
     border: none;
   }
-  footer .description {
-    margin-top: 1rem;
-    margin-bottom: 1.4rem;
-    font-size: 0.85em;
+  .footer-bg {
+    padding: 3rem 0;
   }
-  footer h4 {
-    font-size: 1.1em;
-    margin-top: 2rem;
+  .footer-bg footer {
+    padding: 1rem 0 3rem 0;
   }
-  footer .footer-link {
+  .footer-bg footer .newsletter-subscribe {
+    margin-top: 2.6rem;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+  .footer-bg footer .newsletter-subscribe h4 {
+    font-size: 1.3em;
+  }
+  .footer-bg footer .newsletter-subscribe .input-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem 0;
+  }
+  .footer-bg footer .newsletter-subscribe .input-box input {
+    padding: 0.3rem 0.5rem;
+    border: none;
+    width: 85%;
+  }
+  .footer-bg footer .newsletter-subscribe .input-box button {
+    padding: 0.3rem 1rem;
+    border: none;
+    width: 15%;
+  }
+  .footer-bg footer .footer-link {
     display: block;
     margin: 0.7rem 0;
-    font-size: 0.85em;
+    text-decoration: none;
   }
-  footer .social-media {
+  .footer-bg .social-media {
+    margin-top: 3.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-bg .social-media .start {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-bg .social-media .start a {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+  }
+  .footer-bg .social-media .end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 2rem;
   }
-  footer .social-media img {
-    width: 1.5rem;
+  .footer-bg .social-media .end a {
+    margin: 0 1rem;
   }
 }
 
@@ -2371,34 +2693,6 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
     margin-top: 2rem;
     font-size: 1em;
     text-align: center;
-  }
-  header .hero-row .intro .row-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 2rem;
-  }
-  header .hero-row .intro .row-btn button {
-    padding: 0.7rem 1.4rem;
-    font-size: 0.85em;
-  }
-  header .hero-row .intro .row-btn button:last-child {
-    margin-left: 1rem;
   }
   header .hero-row .eclipse {
     width: 100%;
@@ -2465,60 +2759,10 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
   .popular-category .popular-card h3 {
     font-size: 1.3em;
   }
-  .bg-container {
-    width: 100%;
-    height: 65rem;
-    margin: 0 auto;
-  }
-  .bg-container .bg {
-    background-image: url("@/assets/images/bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  .bg-container .bg h1 {
-    position: absolute;
-    top: 10%;
-    left: 0%;
-    width: 100%;
-    padding: 0 0.6rem;
-  }
-  .bg-container .bg .job-search {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 0 1rem;
-    position: absolute;
-    bottom: 6%;
-    left: 0;
-  }
-  .bg-container .bg .job-search .job-card {
-    width: 100%;
-    padding: 1rem;
-    border-radius: 12px;
-    margin: 1rem 0;
-  }
-  .bg-container .bg .job-search .job-card p {
-    margin: 1.5rem 0;
-  }
   .image-container {
-    width: 100%;
+    width: 94%;
     margin: 2rem auto;
+    padding: 3rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2631,6 +2875,32 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
   .get-started p {
     font-size: 1em;
   }
+  .bg-container {
+    width: 94%;
+    height: 27rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  .bg-container .bg {
+    background-image: url("@/assets/images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .bg-container .bg h2 {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    color: #fff;
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+    font-size: 1.23em;
+    padding: 0 0.6rem;
+  }
   .connect-talent {
     padding: 3rem 0;
     margin: 0 auto;
@@ -2655,6 +2925,85 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
   }
   .connect-talent .connect-row .cards .talent-card p {
     font-size: 1em;
+  }
+  .register-section {
+    padding: 3rem 0;
+    width: 94%;
+    margin: 0 auto;
+  }
+  .register-section .register-bg {
+    background-image: url("@/assets/icons/reg-get-started.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 15rem;
+    border-radius: 0.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .register-section .register-bg .row-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .register-section .register-bg .row-item h2 {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  .register-section .register-bg .row-item .input-box {
+    margin: 1rem auto;
+    width: 100%;
+  }
+  .register-section .register-bg .row-item .input-box input {
+    width: 100%;
+    border: none;
+    border-radius: 2rem;
+  }
+  .register-section .register-bg .row-item .input-box input::-webkit-input-placeholder {
+    font-size: 0.88em;
+  }
+  .register-section .register-bg .row-item .input-box input:-ms-input-placeholder {
+    font-size: 0.88em;
+  }
+  .register-section .register-bg .row-item .input-box input::-ms-input-placeholder {
+    font-size: 0.88em;
+  }
+  .register-section .register-bg .row-item .input-box input::placeholder {
+    font-size: 0.88em;
   }
   .subscribe {
     padding: 3rem 0;
@@ -2764,28 +3113,118 @@ header .hero-row .eclipse .hero-animation .place-holder-05 {
   .footer-bg {
     padding: 3rem 0;
   }
-  .footer-bg footer .footer-logo img {
-    width: 8rem;
+  .footer-bg footer {
+    padding: 1rem 0 3rem 0;
   }
-  .footer-bg footer .description {
-    margin-top: 1rem;
-    margin-bottom: 1.4rem;
-    font-size: 0.85em;
+  .footer-bg footer .newsletter-subscribe {
+    margin-top: 2.6rem;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
   }
-  .footer-bg footer h4 {
-    font-size: 1.1em;
-    margin-top: 2rem;
+  .footer-bg footer .newsletter-subscribe h4 {
+    font-size: 1.3em;
+  }
+  .footer-bg footer .newsletter-subscribe .input-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem 0;
+  }
+  .footer-bg footer .newsletter-subscribe .input-box input {
+    padding: 0.3rem 0.5rem;
+    border: none;
+    width: 85%;
+  }
+  .footer-bg footer .newsletter-subscribe .input-box button {
+    padding: 0.3rem 1rem;
+    border: none;
+    width: 15%;
   }
   .footer-bg footer .footer-link {
     display: block;
     margin: 0.7rem 0;
-    font-size: 0.85em;
+    color: #757575;
+    text-decoration: none;
   }
-  .footer-bg footer .social-media {
+  .footer-bg .social-media {
+    margin-top: 3.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-bg .social-media .start {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-bg .social-media .start a {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    color: #676464;
+    text-decoration: none;
+  }
+  .footer-bg .social-media .end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 2rem;
   }
-  .footer-bg footer .social-media img {
-    width: 1.5rem;
+  .footer-bg .social-media .end a {
+    margin: 0 1rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

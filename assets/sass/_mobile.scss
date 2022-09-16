@@ -40,22 +40,21 @@
           text-align: center;
         }
 
-        .row-btn {
-          // @include flexItem(row, flex-start);
+        // .row-btn {
 
-          @include flexItem(row, center);
-          align-items: center;
-          margin-top: 2rem;
-          button {
-            padding: 0.7rem 1.4rem;
+        //   @include flexItem(row, center);
+        //   align-items: center;
+        //   margin-top: 2rem;
+        //   button {
+        //     padding: 0.7rem 1.4rem;
 
-            font-size: 0.85em;
+        //     font-size: 0.85em;
 
-            &:last-child {
-              margin-left: 1rem;
-            }
-          }
-        }
+        //     &:last-child {
+        //       margin-left: 1rem;
+        //     }
+        //   }
+        // }
       }
 
       .eclipse {
@@ -138,56 +137,11 @@
     }
   }
 
-  .bg-container {
-    width: 100%;
-    height: 65rem;
-    margin: 0 auto;
-
-    .bg {
-      background-image: url("@/assets/images/bg.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      width: 100%;
-      height: 100%;
-      position: relative;
-
-      h1 {
-        position: absolute;
-        top: 10%;
-        left: 0%;
-        width: 100%;
-
-        padding: 0 0.6rem;
-      }
-
-      .job-search {
-        @include flexItem(row, space-between);
-        padding: 0 1rem;
-
-        position: absolute;
-        bottom: 6%;
-        left: 0;
-
-        .job-card {
-          width: 100%;
-          padding: 1rem;
-
-          border-radius: 12px;
-          margin: 1rem 0;
-
-          p {
-            margin: 1.5rem 0;
-          }
-        }
-      }
-    }
-  }
-
   .image-container {
-    width: 100%;
+    width: 94%;
 
     margin: 2rem auto;
+    padding: 3rem 0;
 
     @include flexItem(row, space-between);
 
@@ -323,6 +277,34 @@
     }
   }
 
+  .bg-container {
+    width: 94%;
+    height: 27rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+
+    .bg {
+      background-image: url("@/assets/images/bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      h2 {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        width: 100%;
+        color: $white;
+        transform: translate(0%, -50%);
+        font-size: 1.23em;
+        padding: 0 0.6rem;
+      }
+    }
+  }
+
   .connect-talent {
     padding: 3rem 0;
 
@@ -353,6 +335,51 @@
 
           p {
             font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+
+  .register-section {
+    padding: 3rem 0;
+    width: 94%;
+
+    margin: 0 auto;
+
+    .register-bg {
+      background-image: url("@/assets/icons/reg-get-started.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 15rem;
+      border-radius: 0.6rem;
+      @include flexItem(row, space-between);
+      align-items: center;
+
+      .row-item {
+        @include flexItem(row, space-between);
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+
+        h2 {
+          width: 100%;
+          font-size: 1.5em;
+        }
+
+        .input-box {
+          margin: 1rem auto;
+          width: 100%;
+          input {
+            width: 100%;
+            border: none;
+            border-radius: 2rem;
+
+            &::placeholder {
+              font-size: 0.88em;
+            }
           }
         }
       }
@@ -471,33 +498,65 @@
     padding: 3rem 0;
 
     footer {
-      .footer-logo {
-        img {
-          width: 8rem;
+      padding: 1rem 0 3rem 0;
+
+      .newsletter-subscribe {
+        margin-top: 2.6rem;
+
+        transform: translateY(0rem);
+
+        h4 {
+          font-size: 1.3em;
+        }
+
+        .input-box {
+          @include flexItem(row, flex-start);
+          align-items: center;
+          margin: 1rem 0;
+
+          input {
+            padding: 0.3rem 0.5rem;
+            border: none;
+            width: 85%;
+          }
+
+          button {
+            padding: 0.3rem 1rem;
+            border: none;
+            width: 15%;
+          }
         }
       }
-      .description {
-        margin-top: 1rem;
-        margin-bottom: 1.4rem;
-        font-size: 0.85em;
-      }
 
-      h4 {
-        font-size: 1.1em;
-
-        margin-top: 2rem;
-      }
       .footer-link {
         display: block;
         margin: 0.7rem 0;
-        font-size: 0.85em;
+
+        color: #757575;
+
+        text-decoration: none;
+      }
+    }
+    .social-media {
+      margin-top: 3.6rem;
+
+      @include flexItem(row, center);
+      align-items: center;
+      .start {
+        @include flexItem(row, center);
+        a {
+          margin-right: 2rem;
+          margin-bottom: 1rem;
+          color: #676464;
+          text-decoration: none;
+        }
       }
 
-      .social-media {
+      .end {
+        @include flexItem(row, center);
         margin-top: 2rem;
-
-        img {
-          width: 1.5rem;
+        a {
+          margin: 0 1rem;
         }
       }
     }

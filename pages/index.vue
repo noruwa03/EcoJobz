@@ -44,16 +44,15 @@
     <header>
       <div class="hero-row">
         <div class="intro">
-          <h1>Hire freelancers to make things happen.</h1>
+          <h1>Hire the perfect freelancers to turn your ideas into reality</h1>
           <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
+            Ecojobz is a highly vetted network of developers, designers, technical writers, content strategists and content managers across Africa.
           </p>
-          <div class="row-btn">
+          <!-- <div class="row-btn">
             <button>Find Job</button>
             <button>Find Freelancer</button>
-          </div>
+          </div> -->
+          <button>Hire a talented freelancer</button>
         </div>
         <div class="eclipse">
           <div class="hero-animation">
@@ -90,7 +89,7 @@
     <!-- End of Hero Section -->
 
     <!-- Popular Category -->
-    <div class="popular-category">
+    <!-- <div class="popular-category">
       <div class="text-center">
         <h1>Most Popular Categories</h1>
       </div>
@@ -147,51 +146,17 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- End of Popular Category -->
 
-    <!-- Background-Image -->
-    <div class="bg-container">
-      <div class="bg">
-        <h1>Get the right people to grow with on Ecojobz easily</h1>
-
-        <div class="job-search">
-          <div class="job-card">
-            <h3>Job search</h3>
-            <p>
-              Ask for personalized tips on resumes, interviews and best
-              practices in the tech space
-            </p>
-            <button>Get Started</button>
-          </div>
-          <div class="job-card">
-            <h3>Job search</h3>
-            <p>
-              Ask for personalized tips on resumes, interviews and best
-              practices in the tech space
-            </p>
-            <button>Get Started</button>
-          </div>
-          <div class="job-card">
-            <h3>Job search</h3>
-            <p>
-              Ask for personalized tips on resumes, interviews and best
-              practices in the tech space
-            </p>
-            <button>Get Started</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- End of Background-Image -->
+   
 
     <!-- Side by Side Image -->
     <div class="image-container">
       <div class="image-container-one">
         <div class="text-content">
-          <h3>Vetted and Verified</h3>
+          <h3>Early-Stage Start Ups</h3>
           <p>
             Schedule a session instantly with a mentor and work with them -
             whether it's for one-off tactical advice or multiple sessions
@@ -201,7 +166,7 @@
       </div>
       <div class="image-container-two">
         <div class="text-content">
-          <h3>Vetted and Verified</h3>
+          <h3>Enterprises</h3>
           <p>
             Schedule a session instantly with a mentor and work with them -
             whether it's for one-off tactical advice or multiple sessions
@@ -214,7 +179,7 @@
     <!-- End of Side by Side Image -->
 
     <!-- How-We-Work -->
-    <div class="how-we-work">
+    <!-- <div class="how-we-work">
       <div class="text-center"><h1>How We Work</h1></div>
       <div class="container-lg">
         <div class="row align-items-center justify-content-between">
@@ -304,7 +269,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- End of How-We-Work -->
 
     <!-- Featured Jobs -->
@@ -590,14 +555,26 @@
 
     <!-- End of Get Started -->
 
+
+     <!-- Background-Image -->
+    <div class="bg-container">
+      <div class="bg">
+        <h2>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h2>
+
+       
+      </div>
+    </div>
+
+    <!-- End of Background-Image -->
+
     <div class="connect-talent">
       <div class="connect-row">
         <div class="right-talent">
-          <h1>We help you connect with the right talent</h1>
+          <h1>Join Our diverse pool of talents</h1>
           <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
+            We only provide the best talent for your business needs. Our
+            processes have been proven time and time again in multiple
+            industries to deliver only the best results.
           </p>
           <button>
             Get Started
@@ -639,6 +616,20 @@
       </div>
     </div>
 
+    <!-- Register Section -->
+    <div class="register-section">
+      <div class="register-bg">
+        <div class="row-item">
+          <h2>Register and get started for free</h2>
+          <div class="input-box">
+            <input type="text" placeholder="Your email address..." />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Register Section -->
+
     <!-- Subscribe Section -->
     <!-- <div class="subscribe">
       <div class="subscribe-border">
@@ -663,74 +654,76 @@
       <div class="container-lg">
         <footer>
           <div class="row align-items-start justify-content-between">
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="footer-logo">
-                <img src="@/assets/icons/footer-logo.svg" alt="" />
+            <div class="col-6 col-sm-4 col-lg-2">
+              <h4>Quick Links</h4>
+              <NuxtLink class="footer-link" to="" target="_blank">
+                About Ecojobz
+              </NuxtLink>
+              <NuxtLink class="footer-link" to="/" target="_blank">
+                Hire From Ecojobz
+              </NuxtLink>
+              <NuxtLink class="footer-link" to="" target="_blank">
+                Terms and Condition
+              </NuxtLink>
+              <NuxtLink class="footer-link" to="" target="_blank">
+                Privacy policy
+              </NuxtLink>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+              <h4>Information</h4>
+              <NuxtLink class="footer-link" to="" target="_blank">
+                Nibh
+              </NuxtLink>
+              <NuxtLink class="footer-link" to="/" target="_blank">
+                Egestas
+              </NuxtLink>
+              <NuxtLink class="footer-link" to="/" target="_blank">
+                Dictum
+              </NuxtLink>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+              <h4>Contact Us</h4>
+              <NuxtLink class="footer-link" to="" target="_blank">
+                help@ecojobz.io
+              </NuxtLink>
+              <NuxtLink class="footer-link" to="/" target="_blank">
+                Our Newsletter
+              </NuxtLink>
+              <NuxtLink class="footer-link" to="/" target="_blank">
+                Testimonials
+              </NuxtLink>
+              <NuxtLink class="footer-link" to="/" target="_blank">
+                FAQs
+              </NuxtLink>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="newsletter-subscribe">
+                <h4>Subscribe</h4>
+                <div class="input-box">
+                  <input type="text" />
+                  <button>
+                    <img src="@/assets/icons/chevron-right-white.svg" alt="" />
+                  </button>
+                </div>
+                <p>
+                  Subscribe to our weekly newsletter to get the latest info
+                  about Ecojobz
+                </p>
               </div>
-              <div class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                ornare cursus sed nunc eget dictum Sed ornare cursus sed nunc
-                eget dictumd nunc eget dictum Sed ornare cursus sed nunc eget
-                dictum Sed ornare cursus sed nunc eget dictumd nunc eget dictum
-                Sed ornare cursus sed nunc eget dictum
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2">
-              <h4>Company</h4>
-              <NuxtLink class="footer-link" to="" target="_blank">
-                Home
-              </NuxtLink>
-              <NuxtLink class="footer-link" to="/" target="_blank">
-                About
-              </NuxtLink>
-              <NuxtLink class="footer-link" to="" target="_blank">
-                FAQS
-              </NuxtLink>
-              <NuxtLink class="footer-link" to="" target="_blank">
-                Contact
-              </NuxtLink>
-             
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2">
-              <h4>Product</h4>
-              <NuxtLink class="footer-link" to="" target="_blank">
-                Pricing
-              </NuxtLink>
-              <NuxtLink class="footer-link" to="/" target="_blank">
-                Customers
-              </NuxtLink>
-             
-              
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2">
-              <h4>Resources</h4>
-              <NuxtLink class="footer-link" to="" target="_blank">
-                Blog
-              </NuxtLink>
-              <NuxtLink class="footer-link" to="/" target="_blank">
-                Attendance
-              </NuxtLink>
-              
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2">
-              <h4>Help & Information</h4>
-              <NuxtLink class="footer-link" to="" target="_blank">
-                Help
-              </NuxtLink>
-             
             </div>
           </div>
-          <div class="social-media">
+        </footer>
+        <div class="social-media">
+          <div class="start">
+            <NuxtLink to="/" target="_blank"> Terms and Condition </NuxtLink>
+
+            <NuxtLink to="/" target="_blank"> Privacy policy </NuxtLink>
+            <NuxtLink to="/" target="_blank"> Cookies </NuxtLink>
+          </div>
+          <div class="end">
+            
             <NuxtLink
-              class="me-4"
-              to="https://instagram.com/ecolabz"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="@/assets/icons/twitter.svg" alt="Twitter" />
-            </NuxtLink>
-            <NuxtLink
-              class="me-4"
+            
               to="https://instagram.com/ecolabz"
               target="_blank"
               rel="noopener"
@@ -739,7 +732,7 @@
             </NuxtLink>
 
             <NuxtLink
-              class="me-4"
+           
               to="https://instagram.com/ecolabz"
               target="_blank"
               rel="noopener"
@@ -748,15 +741,15 @@
             </NuxtLink>
 
             <NuxtLink
-              class="me-4"
+         
               to="https://instagram.com/ecolabz"
               target="_blank"
               rel="noopener"
             >
-              <img src="@/assets/icons/instagram.svg" alt="Instagram" />
+              <img src="@/assets/icons/unknown.svg" alt="Instagram" />
             </NuxtLink>
           </div>
-        </footer>
+        </div>
       </div>
     </div>
   </div>

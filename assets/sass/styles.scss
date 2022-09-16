@@ -127,37 +127,47 @@ header {
       width: 45%;
 
       h1 {
-        font-size: 2.6em;
+        font-size: 2.7em;
         font-weight: bolder;
       }
 
       p {
-        margin-top: 2rem;
+        margin: 2rem auto;
         font-size: 1.1em;
+        color: #676464;
       }
 
-      .row-btn {
-        @include flexItem(row, flex-start);
-        align-items: center;
-        margin-top: 2rem;
-        button {
-          padding: 0.7rem 1.4rem;
-          background-color: #4aae8c;
-          color: $white;
-          border-radius: 0.4rem;
-          font-size: 0.85em;
-
-          border: 0.1rem solid #4aae8c;
-
-          &:last-child {
-            margin-left: 1rem;
-            background-color: $white;
-            color: $black;
-            border: 0.1rem solid #505780;
-            font-weight: bold;
-          }
-        }
+      button {
+        padding: 0.8rem 1.5rem;
+        background-color: #4aae8c;
+        color: $white;
+        border-radius: 0.4rem;
+        font-size: 0.9em;
+        border: none;
       }
+
+      // .row-btn {
+      //   @include flexItem(row, flex-start);
+      //   align-items: center;
+      //   margin-top: 2rem;
+      //   button {
+      //     padding: 0.7rem 1.4rem;
+      //     background-color: #4aae8c;
+      //     color: $white;
+      //     border-radius: 0.4rem;
+      //     font-size: 0.85em;
+
+      //     border: 0.1rem solid #4aae8c;
+
+      //     &:last-child {
+      //       margin-left: 1rem;
+      //       background-color: $white;
+      //       color: $black;
+      //       border: 0.1rem solid #505780;
+      //       font-weight: bold;
+      //     }
+      //   }
+      // }
     }
 
     @keyframes rotate {
@@ -277,46 +287,13 @@ header {
     height: 100%;
     position: relative;
 
-    h1 {
+    h2 {
       position: absolute;
-      top: 25%;
-      left: 5%;
+      top: 50%;
+      left: 7%;
       width: 45%;
       color: $white;
-    }
-
-    .job-search {
-      @include flexItem(row, space-between);
-      padding: 0 4rem;
-
-      position: absolute;
-      bottom: 23%;
-      left: 0;
-
-      .job-card {
-        width: 30%;
-        padding: 1rem;
-        background-color: #1a1a1a;
-        border-radius: 12px;
-
-        h3,
-        p {
-          color: $white;
-        }
-
-        p {
-          margin: 1.5rem 0;
-        }
-
-        button {
-          padding: 0.7rem 1.4rem;
-          background-color: #dee6dd;
-          color: #1a1a1a;
-          border-radius: 0.4rem;
-          font-size: 0.85em;
-          border: none;
-        }
-      }
+      transform: translate(0%, -50%);
     }
   }
 }
@@ -325,10 +302,12 @@ header {
   width: 87%;
 
   margin: 0 auto;
+  padding: 5rem 0;
 
   @include flexItem(row, space-between);
 
-  .image-container-one, .image-container-two {
+  .image-container-one,
+  .image-container-two {
     position: relative;
 
     .text-content {
@@ -347,7 +326,7 @@ header {
     background-position: center;
     width: 49%;
     height: 30rem;
-    
+
     border-radius: 1rem;
   }
 
@@ -358,13 +337,13 @@ header {
     background-position: center;
     width: 49%;
     height: 30rem;
-   
+
     border-radius: 1rem;
   }
 }
 
 .how-we-work {
-  padding: 7rem 0;
+  padding: 5rem 0;
   h1 {
     font-size: 3.2em;
     font-weight: bolder;
@@ -514,8 +493,9 @@ header {
 }
 
 .get-started {
-  padding: 5rem 0;
-  background-color: #f7fafc;
+  // margin: 2rem 0;
+  padding: 7rem 0;
+  // background-color: #f7fafc;
 
   h1 {
     font-weight: bold;
@@ -610,6 +590,54 @@ header {
         p {
           margin-top: 1rem;
           font-size: 1.06em;
+        }
+      }
+    }
+  }
+}
+
+.register-section {
+  padding: 5rem 0;
+  width: 87%;
+
+  margin: 0 auto;
+
+  .register-bg {
+    background-image: url("@/assets/icons/reg-get-started.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 15rem;
+    border-radius: 0.6rem;
+    @include flexItem(row, space-between);
+    align-items: center;
+
+    .row-item {
+      @include flexItem(row, space-between);
+      align-items: center;
+      width: 85%;
+      margin: 0 auto;
+
+      h2 {
+        color: $white;
+        width: 33%;
+      }
+
+      .input-box {
+        width: 45%;
+        input {
+          background: $white;
+
+          padding: 1.2rem 1.1rem;
+          width: 100%;
+          border: none;
+          border-radius: 2rem;
+
+          &::placeholder {
+            color: #7a828a;
+            font-size: 0.88em;
+          }
         }
       }
     }
@@ -816,35 +844,70 @@ header {
 
 .footer-bg {
   padding: 4rem 0;
-  background-color: $black;
+
+  border-top: 0.1rem solid #757575;
 
   footer {
-    .description {
-      margin-top: 1rem;
-      color: #e5e5e5;
-      font-size: 0.9em;
-    }
+    padding: 5rem 0 0rem 0;
+    border-bottom: 3px solid #efefef;
 
     h4 {
-      font-size: 1.07em;
-
-      color: $white;
+      margin-top: 2rem;
     }
+    .newsletter-subscribe {
+      background-color: #e9fff8;
+      padding: 2rem;
+      transform: translateY(-2rem);
+
+      .input-box {
+          @include flexItem(row, flex-start);
+          align-items: center;
+          margin: 1rem 0;
+
+          input {
+            padding: 0.3rem 0.5rem;
+            border: none;
+            width: 85%;
+          }
+
+          button {
+            padding: 0.3rem 1rem;
+            border: none;
+            width: 15%;
+            background-color: #4AAE8C;
+          }
+        }
+    }
+
     .footer-link {
       display: block;
       margin: 0.7rem 0;
-      font-size: 0.9em;
 
-      color: #e5e5e5;
+      color: #757575;
 
       text-decoration: none;
     }
+  }
+  .social-media {
+    margin-top: 3.6rem;
 
-    .social-media {
-      margin-top: 2rem;
+    @include flexItem(row, space-between);
+    align-items: center;
 
-      img {
-        width: 1.5rem;
+    .start {
+      @include flexItem(row, flex-start);
+      a {
+        margin-right: 2rem;
+        color: #676464;
+        text-decoration: none;
+      }
+    }
+
+    .end {
+      @include flexItem(row, flex-start);
+
+      a {
+        margin: 0 0.8rem;
       }
     }
   }
