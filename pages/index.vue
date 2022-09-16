@@ -61,27 +61,27 @@
         <div class="eclipse">
           <div class="hero-animation">
             <img
-              src="@/assets/icons/web-dev.svg"
+              src="@/assets/images/avatar1.jpg"
               class="place-holder-01"
               alt=""
             />
             <img
-              src="@/assets/icons/ui-ux.svg"
+              src="@/assets/images/avatar5.jpg"
               class="place-holder-02"
               alt=""
             />
             <img
-              src="@/assets/icons/logo-branding.svg"
+              src="@/assets/images/avatar2.jpg"
               class="place-holder-03"
               alt=""
             />
             <img
-              src="@/assets/icons/ai-data-model.svg"
+              src="@/assets/images/avatar3.jpg"
               class="place-holder-04"
               alt=""
             />
             <img
-              src="@/assets/icons/content-writing.svg"
+              src="@/assets/images/avatar4.jpg"
               class="place-holder-05"
               alt=""
             />
