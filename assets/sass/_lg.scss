@@ -176,8 +176,8 @@
           margin: 4rem auto;
 
           img {
-            width: 3rem;
-            height: 3rem;
+            width: 3.5rem;
+            height: 3.5rem;
 
             animation: anti-rotate 10s linear infinite;
           }
@@ -189,24 +189,24 @@
           }
 
           .place-holder-02 {
-            width: 2rem;
-            height: 2rem;
+            width: 2.5rem;
+            height: 2.5rem;
             position: absolute;
             top: 0;
             left: 60%;
           }
 
           .place-holder-03 {
-            width: 2rem;
-            height: 2rem;
+            width: 2.5rem;
+            height: 2.5rem;
             position: absolute;
             bottom: 40%;
             right: 5%;
           }
 
           .place-holder-04 {
-            width: 2rem;
-            height: 2rem;
+            width: 2.5rem;
+            height: 2.5rem;
             position: absolute;
             bottom: 3%;
             right: 40%;
@@ -468,7 +468,6 @@
         .input-box {
           margin: 1.7rem auto;
           width: 50%;
-          
         }
       }
     }
